@@ -6,7 +6,6 @@ import reportWebVitals from './reportWebVitals';
 import {
   BrowserRouter as Router,
   Switch,
-  useLocation,
   Route
 } from "react-router-dom";
 

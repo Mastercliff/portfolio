@@ -1,5 +1,9 @@
 import React from "react";
 import { Section } from 'react-scroll-section';
+import About from "../../views/About";
+import Certifications from "../../views/Certifications";
+import Contact from "../../views/Contact";
+import Experiences from "../../views/Experiences";
 import Home from "../../views/Home";
 import Projects from "../../views/Projects";
 import Skills from "../../views/Skills";
@@ -24,19 +28,19 @@ function AppContent(){
                 </Section>
 
                 <Section id="experiences" datatype="experiences">
-                    <Projects />
+                    <Experiences />
                 </Section>
 
-                <Section id="certications" datatype="certications">
-                    <Projects />
+                <Section id="certifications" datatype="certifications">
+                    <Certifications />
                 </Section>
 
                 <Section id="about" datatype="about">
-                    <Projects />
+                    <About />
                 </Section>
 
                 <Section id="contact" datatype="contact">
-                    <Projects />
+                    <Contact />
                 </Section>
             </div>
         </div>

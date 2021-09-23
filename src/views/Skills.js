@@ -10,7 +10,7 @@ function Skills (){
         </h2>
 
         <div className="title mb-3">
-        <img src="icons/infographic.png" height="200px"/>
+        <img src="icons/infographic.png" alt="infographic" height="200px"/>
         </div>
         <SkillsList />
     </div>

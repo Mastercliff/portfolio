@@ -6,7 +6,7 @@ function Card (props){
 
     return <div className={"card " + className}>
        {
-           title == undefined ? null : <h2>
+           title === undefined ? null : <h2>
             {titleIcon} {title}
             </h2>
        } 

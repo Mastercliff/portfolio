@@ -1,4 +1,4 @@
-import { Component, useState } from "react";
+import { useState } from "react";
 import { useScrollSections } from "react-scroll-section";
 import navMenuElements from "./SideNavConfig";
 import './styles/SideNav.scss';
@@ -20,11 +20,10 @@ function SideNav (props){
         });
     }
     const { menuElements } = state;
-    const { history, match} = props;
     return (
         <div className="side-nav">
             <div className="container">
-            <img className="circle-image" src="photo.jpg" alt="circle-image"/>
+            <img className="circle-image" src="photo.jpg" alt="circle-profile"/>
                 <div className="header">
                     <div> 
                     <div className="name-title"> 
