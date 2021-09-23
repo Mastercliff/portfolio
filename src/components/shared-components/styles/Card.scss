@@ -1,0 +1,14 @@
+$color-primary :  #16171b;
+
+.card{
+    background-color: $color-primary;
+    border-radius: 12px;
+    padding: 8px 14px;
+}
+
+.text-content{
+    line-height: 1.6;
+    color: rgb(197, 197, 197);
+    font-weight: 500;
+    font-size: 17px;
+}
