@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Experiences.scss';
+import ExperiencesList from './components/ExperiencesList';
 
 
 function Experiences (){
@@ -7,6 +8,7 @@ function Experiences (){
         <h2>
             <span className="hashtag">#</span> Experiências
         </h2>
+        <ExperiencesList />
     </div>
 }
 

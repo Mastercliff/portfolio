@@ -1,0 +1,26 @@
+.experiences-list{
+    padding-inline-start: 0px;
+
+    li{
+        list-style: none;
+    }
+
+    .experiences-list-item{
+        padding: 8px 14px;
+
+        .title{
+            padding: 0px 0px;
+            font-size: 17px;
+            font-weight: bold;
+
+            .icon{
+                font-size: 17px;
+                color: rgb(80, 218, 80);
+            }
+        }
+
+        .description{
+            font-size: 17px;
+        }
+    }
+}

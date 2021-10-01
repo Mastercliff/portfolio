@@ -1,0 +1,11 @@
+$color-primary :  #16171b;
+
+.chip{
+    padding: 6px 8px;
+    border-radius: 12px;
+    font-weight: bold;
+    background-color: $color-primary;
+    color: rgba(255, 255, 255, 0.75);
+    display: inline;
+    font-size: 12px;
+}

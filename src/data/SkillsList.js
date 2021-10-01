@@ -1,11 +1,11 @@
 const skillList = [
     {
         name: "Flutter",
-        status: 3,
+        status: 4,
     },
     {
         name: "Dart",
-        status: 3,
+        status: 4,
     },
     {
         name: "Laravel",
@@ -17,22 +17,26 @@ const skillList = [
     },
     {
         name: "React",
-        status: 1,
+        status: 2,
     },
     {
-        name: "JS",
-        status: 3,
+        name: "Javascript",
+        status: 4,
     },
     {
         name: "HTML",
-        status: 3,
+        status: 4,
     },
     {
         name: "CSS",
-        status: 3,
+        status: 4,
     },
     {
         name: "SCSS",
+        status: 3,
+    },
+    {
+        name: "Typescript",
         status: 2,
     },
     {
@@ -40,12 +44,16 @@ const skillList = [
         status: 2,
     },
     {
+        name: "Next JS",
+        status: 1,
+    },
+    {
         name: "Mysql",
         status: 2,
     },
     {
         name: "Linux",
-        status: 3,
+        status: 4,
     }
 ]
 

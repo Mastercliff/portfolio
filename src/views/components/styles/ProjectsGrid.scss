@@ -18,7 +18,8 @@ $color-primary :  #16171b;
     transition: 0.3s;
 
     img{
-        border-radius: 8px;
+        border-radius: 12px;
+        object-fit: cover;
     }
 
     .title{

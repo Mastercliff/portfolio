@@ -30,6 +30,13 @@ code {
   flex-direction: row;
 }
 
+.flex-row-center-left{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+}
+
 //Margin Left
 
 .ml-1{

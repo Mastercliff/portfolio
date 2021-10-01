@@ -3,17 +3,15 @@ import '../styles/Projects.scss';
 import ProjectsGrid from './components/ProjectsGrid';
 
 
-class Projects extends Component{
-    render(){
-        return (
-            <div className="projects">
-               <h2>
-                   <span className="hashtag">#</span> Projetos
-               </h2>
-               <ProjectsGrid/>
-            </div>
-        )
-    }
+function Projects (){
+    return (
+        <div className="projects">
+           <h2>
+               <span className="hashtag">#</span> Projetos
+           </h2>
+           <ProjectsGrid/>
+        </div>
+    );
 }
 
 export default Projects;

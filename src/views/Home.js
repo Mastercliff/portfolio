@@ -41,7 +41,7 @@ class Home extends Component{
                         </h2>
                     <span className="text-content">
                        Um dos maiores motivos que me fizeram gostar de programação
-                       foi o fato de como todo e qualquer código/script tenha um objetivo que o define,
+                       foi o fato de como todo e qualquer código/script tem um objetivo que o define,
                        seja um simples teste de aprendizado ou um complexo script de um aplicativo,
                        eles sempre tem um motivo pra terem sido criados.
                     </span>

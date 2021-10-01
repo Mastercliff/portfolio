@@ -5,19 +5,28 @@ import './styles/SkillsList.scss';
 
 const statusMap = {
     "1" : [
-        <div className="status-1 ml-1"> </div>,
-        <div className="status ml-1"> </div>,
-        <div className="status ml-1"> </div>
+        "status-1 ml-1",
+        "status ml-1",
+        "status ml-1",
+        "status ml-1",
     ],
     "2" : [
-        <div className="status-1 ml-1"> </div>,
-        <div className="status-2 ml-1"> </div>,
-        <div className="status ml-1"> </div>
+        "status-1 ml-1",
+        "status-2 ml-1",
+        "status ml-1",
+        "status ml-1",
     ],
     "3" : [
-        <div className="status-1 ml-1"> </div>,
-        <div className="status-2 ml-1"> </div>,
-        <div className="status-3 ml-1"> </div>
+        "status-1 ml-1",
+        "status-2 ml-1",
+        "status-3 ml-1",
+        "status ml-1",
+    ],
+    "4" : [
+        "status-1 ml-1",
+        "status-2 ml-1",
+        "status-3 ml-1",
+        "status-4 ml-1",
     ],
 }
 
@@ -26,11 +35,13 @@ function SkillsList (){
         <div className="skill-list">
             {skillList.map((item, index)=>{
                 return <div className="skill-list-item">
+                    <div className="skill-color"></div>
                     <span>
                         {item.name}
                     </span>
                     {statusMap[item.status].map((item, index) =>{ 
-                        return item;
+                        console.log(item);
+                        return <div className={item}> </div>;
                     })}
                 </div>
             })}

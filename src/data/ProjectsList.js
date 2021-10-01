@@ -1,67 +1,63 @@
 const projectsList =[
     {
-        name: "Aplicativo de Música",
-        date: "10/09/2019",
-        foudation: "Startup de Teste",
-        description: "Gosta de plantar mas não tem dinheiro para gastar? Tem espaço e dinheiro mas não encontra as plantas que deseja? Temos a solução para você, de forma gratuita poderá encontrar alguém.",
-        image: "image/projects/default.png",
-        link: "https://github.com/Mastercliff",
-        technologies:[
-            'Flutter',
-            'Dart',
-            'Laravel'
-        ]
-    },
-    {
         name: "Semear App",
         date: "10/09/2019",
-        foudation: "Startup de Teste",
-        description: "Gosta de plantar mas não tem dinheiro para gastar? Tem espaço e dinheiro mas não encontra as plantas que deseja? Temos a solução para você, de forma gratuita poderá encontrar alguém.",
-        image: "image/projects/default.png",
-        link: "https://github.com/Mastercliff",
+        foudation: "Startup Mobpoint",
+        description: "",
+        image: "image/projects/refugio.jpg",
+        link: "https://play.google.com/store/apps/details?id=com.mobpoint.refugio",
         technologies:[
             'Flutter',
             'Dart',
-            'Laravel'
         ]
     },
     {
-        name: "Aplicativo de Jogos",
+        name: "Dobuy App",
         date: "10/09/2019",
-        foudation: "Startup de Teste",
-        description: "Gosta de plantar mas não tem dinheiro para gastar? Tem espaço e dinheiro mas não encontra as plantas que deseja? Temos a solução para você, de forma gratuita poderá encontrar alguém.",
-        image: "image/projects/default.png",
-        link: "https://github.com/Mastercliff",
+        foudation: "Startup Allkmia",
+        description: "",
+        image: "image/projects/dobuy.png",
+        link: "https://play.google.com/store/apps/details?id=com.dobuyapplication&hl",
         technologies:[
             'Flutter',
             'Dart',
-            'Laravel'
         ]
     },
     {
-        name: "Norm Site",
+        name: "Mobpoint Site",
         date: "10/09/2019",
-        foudation: "Startup de Teste",
-        description: "Gosta de plantar mas não tem dinheiro para gastar? Tem espaço e dinheiro mas não encontra as plantas que deseja? Temos a solução para você, de forma gratuita poderá encontrar alguém.",
+        foudation: "Startup Mobpoint",
+        description: "",
         image: "image/projects/default.png",
-        link: "https://github.com/Mastercliff",
+        link: "#",
         technologies:[
-            'Flutter',
-            'Dart',
-            'Laravel'
+            'Laravel',
+            'PHP'
         ]
     },
     {
-        name: "Norm Site",
+        name: "Boob",
         date: "10/09/2019",
-        foudation: "Startup de Teste",
-        description: "Gosta de plantar mas não tem dinheiro para gastar? Tem espaço e dinheiro mas não encontra as plantas que deseja? Temos a solução para você, de forma gratuita poderá encontrar alguém.",
+        foudation: "Pessoal",
+        description: "",
         image: "image/projects/default.png",
         link: "https://github.com/Mastercliff",
         technologies:[
             'Flutter',
             'Dart',
-            'Laravel'
+        ]
+    },
+    {
+        name: "Este Site",
+        date: "10/09/2019",
+        foudation: "Pessoal",
+        description: "",
+        image: "image/projects/this.jpeg",
+        link: "https://github.com/Mastercliff",
+        technologies:[
+           'React Js',
+           'Javascript',
+           'SCSS',
         ]
     },
 ]
