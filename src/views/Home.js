@@ -2,6 +2,7 @@ import { Component } from 'react';
 import '../styles/Home.scss';
 import {FiPenTool} from 'react-icons/fi';
 import Card from '../components/shared-components/Card';
+import CodeCard from '../components/shared-components/CodeCard';
 
 
 class Home extends Component{
@@ -12,15 +13,17 @@ class Home extends Component{
                     <span className="hashtag"># </span>
                     Bem vindo(a) ao meu portfólio, fique a vontade
                 </h2>
+
+                <CodeCard/>
                 
                 <div className="flex-row"> 
                     <img src="icons/drawing.png" alt="creativity" height="220px" />
                     <div className="body-card ml-4">
-                    <Card 
-                        titleIcon="#"
-                        title="Apresentação"
-                    >
-                        Olá, me chamo Elias Garrido, sou programador a quase 3 anos, 
+                    <h2>
+                            # Apresentação
+                    </h2>
+                       <span className="text-content">
+                        Olá, me chamo Elias Garrido, sou programador tem 3 anos, 
                         comecei a programar em 2019 com as linguagens <strong>C</strong> e <strong>Python</strong>, criando programas
                         e desenvolvendo algumas aplicações de terminal, depois fui "evoluíndo"(se é que dá pra chamar assim)
                         e começando a mexer com outras tecnologias, hoje trabalho com 
@@ -30,7 +33,7 @@ class Home extends Component{
                         <strong> React</strong>,
                         <strong> Nodejs </strong>
                         e outras que você pode ver em  <a className="mt-1" href="#skills"> <FiPenTool style={{fontSize: "14px"}}></FiPenTool> Habilidades</a>.
-                    </Card>
+                       </span>
                     </div>
                 </div>
 

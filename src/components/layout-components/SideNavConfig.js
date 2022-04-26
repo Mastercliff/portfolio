@@ -33,12 +33,6 @@ const navMenuElements = [
         path: "#home",
     },
     {
-        title: 'Sobre',
-        icon: FiBookOpen,
-        selected : false,
-        path: "#home",
-    },
-    {
         title: 'Contato',
         icon: FiAtSign,
         selected : false,

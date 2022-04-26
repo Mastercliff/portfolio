@@ -35,10 +35,6 @@ function AppContent(){
                     <Certifications />
                 </Section>
 
-                <Section id="about" datatype="about">
-                    <About />
-                </Section>
-
                 <Section id="contact" datatype="contact">
                     <Contact />
                 </Section>
