@@ -1,3 +1,4 @@
 # Portfolio
 
 - Home
+- Projects
