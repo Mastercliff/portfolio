@@ -1,3 +1,5 @@
 # Portfolio
 
 - Home
+- Projects
+- Skills
