@@ -1,7 +1,6 @@
 import { Component } from 'react';
-import '../styles/Home.scss';
+import '../styles/views/Home.scss';
 import {FiPenTool} from 'react-icons/fi';
-import Card from '../components/shared-components/Card';
 import CodeCard from '../components/shared-components/CodeCard';
 
 

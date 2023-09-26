@@ -1,7 +1,7 @@
-$color-primary :  #101720;
+@import '/src/styles/globals/variables.scss';
 
 .card{
-    background-color: $color-primary;
+    background-color: $content-bg-color;
     border-radius: 12px;
     padding: 8px 14px;
 }

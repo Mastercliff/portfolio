@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Experiences.scss';
+import '../styles/views/Experiences.scss';
 import ExperiencesList from './components/ExperiencesList';
 
 

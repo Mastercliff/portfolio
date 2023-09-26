@@ -1,4 +1,4 @@
-import {FiGrid, FiLayers, FiPenTool, FiClipboard, FiBookOpen, FiAtSign, FiAward} from 'react-icons/fi';
+import {FiGrid, FiLayers, FiPenTool, FiClipboard, FiAtSign, FiAward} from 'react-icons/fi';
 
 
 const navMenuElements = [

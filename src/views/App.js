@@ -2,7 +2,7 @@ import { ScrollingProvider } from 'react-scroll-section';
 import { useHistory, useRouteMatch } from 'react-router-dom';
 import AppContent from '../components/layout-components/AppContent';
 import SideNav from '../components/layout-components/SideNav';
-import '../styles/App.scss'
+import '../styles/views/App.scss'
 
 function App() {
   const history = useHistory();

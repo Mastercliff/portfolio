@@ -1,6 +1,5 @@
 import React from "react";
 import { Section } from 'react-scroll-section';
-import About from "../../views/About";
 import Certifications from "../../views/Certifications";
 import Contact from "../../views/Contact";
 import Experiences from "../../views/Experiences";

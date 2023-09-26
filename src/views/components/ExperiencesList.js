@@ -1,10 +1,8 @@
 import React from "react";
-import Card from "../../components/shared-components/Card";
 import experiencesList from "../../data/ExperiencesList";
 import './styles/ExperiencesList.scss';
 import {FiCheckCircle, FiAtSign, FiBookmark} from 'react-icons/fi';
 import Chip from "../../components/shared-components/Chip";
-import technologiesColors from "../../data/TechnologiesColors";
 
 
 function ExperiencesList(){

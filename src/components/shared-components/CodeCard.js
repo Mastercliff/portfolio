@@ -12,13 +12,15 @@ function helloWorld(){
 }
 
 console.log(helloWorld());
-
-
-
 `;
 
     return <div className="code-card">
-        <SyntaxHighlighter showLineNumbers={true}  customStyle={{ backgroundColor: '#101720',  borderRadius: "12px"}} language="javascript" style={dracula}>
+        <SyntaxHighlighter
+            showLineNumbers={true}
+            customStyle={{ backgroundColor: '#1d2125',  borderRadius: "12px"}}
+            language="javascript" 
+            style={dracula} 
+        >
       {codeString}
     </SyntaxHighlighter>
     </div>;

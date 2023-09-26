@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Certifications.scss';
+import '../styles/views/Certifications.scss';
 import CertificationsList from './components/CertificationsList';
 
 

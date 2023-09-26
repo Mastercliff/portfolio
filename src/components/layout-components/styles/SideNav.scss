@@ -1,4 +1,4 @@
-$color-primary :  #6a73ca;
+@import '../../../styles/globals/variables.scss';
 
 .side-nav{
     .container{
@@ -16,7 +16,7 @@ $color-primary :  #6a73ca;
         justify-content: center;
         align-items: center;
 
-        background-color: #101720;
+        background-color: $content-bg-color;
 
         box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.08);
         border-radius: 12px;
@@ -30,7 +30,6 @@ $color-primary :  #6a73ca;
         border-radius: 50%;
         object-fit: contain;
         margin-right: 10px;
-        border: solid 1.5px $color-primary;
         margin-top: 10px;
         margin-bottom: 12px;
     }
@@ -81,7 +80,6 @@ $color-primary :  #6a73ca;
             }
         }
         .active{
-            border-left: solid 10px $color-primary;
             color: white;
         }
         

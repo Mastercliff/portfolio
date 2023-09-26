@@ -1,4 +1,4 @@
-$color-primary :  #16171b;
+@import '../globals/variables.scss';
 
 body {
   margin: 0px;
@@ -11,7 +11,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #0a0f14;
+  background-color: $bg-color;
   color:#FFFFFF;
 }
 

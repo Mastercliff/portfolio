@@ -1,5 +1,4 @@
-import { Component } from 'react';
-import '../styles/Projects.scss';
+import '../styles/views/Projects.scss';
 import ProjectsGrid from './components/ProjectsGrid';
 
 
