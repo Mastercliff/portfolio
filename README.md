@@ -5,4 +5,4 @@
 - Skills
 - Contact
 - Skills
-- Experience
+- Experiences
