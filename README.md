@@ -3,3 +3,4 @@
 - Home
 - Projects
 - Skills
+- Contact
