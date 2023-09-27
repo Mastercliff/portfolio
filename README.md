@@ -4,3 +4,4 @@
 - Projects
 - Skills
 - Contact
+- Skills
