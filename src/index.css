@@ -1,8 +1,10 @@
 
 body {
 	height: 100vh;
-	background-color: #0e161e;
+	background-image: linear-gradient(to right top, #051937, #072041, #0a274c, #0c2e57, #0e3662);
 }
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
