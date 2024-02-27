@@ -1,1 +1,1 @@
-export const baseInterfaceClasses = "rounded-md text-white ring-1 backdrop-blur-lg bg-blend-multiply"
+export const baseInterfaceClasses = "rounded-lg text-white backdrop-blur-xl bg-slate-800"

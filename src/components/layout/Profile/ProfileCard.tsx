@@ -5,7 +5,7 @@ export default function ProfileCard() {
 	return (
 		<Card>
 			<div className="flex flex-col justify-between items-middle h-full">
-				<div className="text-center font-bold text-2xl">Bem vindo</div>
+				<div className="flex flex-row justify-center items-center text-center font-bold text-3xl"><span className="mr-2">Bem vindo(a)</span> <i className="devicon-bash-plain" style={{marginTop: "7px"}}></i></div>
 
 				<div className="flex flex-col items-center">
 					<div
@@ -30,9 +30,12 @@ export default function ProfileCard() {
 						<div className="font-bold text-xl">Elias Sousa Garrido</div>
 						<div className="font-medium">Fullstack Developer</div>
 					</div>
+
+					<div className="font-bold mt-8">Disponível Para Oportunidades de Trabalho</div>
 				</div>
 
-				<div className="flex flex-col items-start space-y-1">
+				<div className="flex flex-col items-start space-y-1 p-4">
+					
 					<Button
 						startIcon={<i className="devicon-linkedin-plain text-2xl"></i>}
 						variant="link"
@@ -41,7 +44,7 @@ export default function ProfileCard() {
 					</Button>
 
 					<Button
-						startIcon={<i className="devicon-github-original-wordmark text-2xl"></i>}
+						startIcon={<i className="devicon-github-original text-2xl"></i>}
 						variant="link"
 					>
 						github.com/Mastercliff

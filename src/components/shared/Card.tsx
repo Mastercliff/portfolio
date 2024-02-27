@@ -11,7 +11,9 @@ export default function Card(props: CardProps) {
 		children,
 		title
 	} = props
-	return <div className={`${baseInterfaceClasses} p-4 w-full h-full`}>
+	return <div className={`${baseInterfaceClasses} p-4 w-full h-full drop-shadow-md`} style={{
+		backgroundColor: "#33415541"
+	}}>
 		{
 			title && <div>
 				{title}

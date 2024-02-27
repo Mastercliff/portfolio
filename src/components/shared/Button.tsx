@@ -7,9 +7,9 @@ type ButtonProps = {
 }
 
 const buttonStyles = {
-	base: "text-lg",
+	base: "text-lg p-2",
 	default: "",
-	link: "text-blue",
+	link: "p1 text-blue-300 rounded-md hover:underline hover:bg-slate-700 hover:text-blue-400",
 	outlined: ""
 }
 
