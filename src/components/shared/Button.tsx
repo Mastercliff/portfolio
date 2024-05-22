@@ -2,7 +2,7 @@ import { ReactNode } from "react"
 
 type ButtonProps = {
 	startIcon?: ReactNode
-	children: ReactNode
+	children?: ReactNode
 	variant?: "link" | "outlined" | "default"
 }
 

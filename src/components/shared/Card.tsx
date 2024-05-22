@@ -3,16 +3,18 @@ import { ReactNode } from "react"
 
 type CardProps = {
 	title?: ReactNode,
-	children: ReactNode
+	children: ReactNode,
+	customClass?: string 
 }
 
 export default function Card(props: CardProps) {
 	const {
 		children,
-		title
+		title,
+		customClass
 	} = props
-	return <div className={`${baseInterfaceClasses} p-4 w-full h-full drop-shadow-md`} style={{
-		backgroundColor: "#33415541"
+	return <div className={`${baseInterfaceClasses} p-6 w-full h-full ${customClass}`} style={{
+		//backgroundColor: "rgb(0 0 0 / 15%)"
 	}}>
 		{
 			title && <div>

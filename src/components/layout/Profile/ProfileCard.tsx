@@ -1,56 +1,99 @@
-import Button from "@/components/shared/Button";
 import Card from "@/components/shared/Card";
+import Chip from "@/components/shared/Chip";
+import Image from "@/components/shared/Image";
 
 export default function ProfileCard() {
 	return (
-		<Card>
-			<div className="flex flex-col justify-between items-middle h-full">
-				<div className="flex flex-row justify-center items-center text-center font-bold text-3xl"><span className="mr-2">Bem vindo(a)</span> <i className="devicon-bash-plain" style={{marginTop: "7px"}}></i></div>
+		<Card customClass="shadow-xl">
+			<div className="flex flex-col justify-between items-middle w-full">
+			<div className="flex flex-row items-center justify-center mt-4 h-[250px]">
+				<div
+					className=""
+				>
+					<Image
+						width="250px"
+						height="250px"
+						imageSrc="/images/profile.png"
+						fit="fill"
+					/>
+				</div>
 
-				<div className="flex flex-col items-center">
-					<div
-						style={{
-							width: "160px",
-							height: "160px",
-							borderRadius: "50%",
-							overflow: "hidden",
-							backgroundColor: "blue",
-							display: "inline-block",
-							verticalAlign: "middle",
-						}}
-					>
-						<img
-							src="/images/profile.png"
-							className="object-contain"
-							style={{ width: "100%", objectFit: "fill" }}
+				<div className="flex flex-col justify-between items-start ml-6 text-white h-full pb-2">
+					<div>
+					<div className="font-bold text-xl">Elias Sousa Garrido</div>
+					<div className="font-medium text-gray-400">Fullstack Developer</div>
+					</div>
+
+					<div className="w-[600px]">
+						Olá, sou <span className="text-green-400 font-medium">Desenvolvedor Fullstack Pleno</span>, possuo mais de <span className="text-green-400 font-medium">4 anos</span> de experiência comprovada,
+						sou autoditada e apaixonado pela área de desenvolvimento de software. Seria uma honra
+						fazer parte do planejamento, criação e manutenção das suas aplicações.
+					</div>
+
+					<div className="flex flex-row items-center font-semibold mt-4"><div className="w-[8px] h-[8px] bg-green-500 rounded-full mr-2"></div>
+						<Chip
+							color="success"
+							title="Disponível Para Oportunidades de Trabalho"
 						/>
 					</div>
-
-					<div className="flex flex-col justify-between items-center">
-						<div className="font-bold text-xl">Elias Sousa Garrido</div>
-						<div className="font-medium">Fullstack Developer</div>
-					</div>
-
-					<div className="font-bold mt-8">Disponível Para Oportunidades de Trabalho</div>
-				</div>
-
-				<div className="flex flex-col items-start space-y-1 p-4">
-					
-					<Button
-						startIcon={<i className="devicon-linkedin-plain text-2xl"></i>}
-						variant="link"
-					>
-						linkedin.com/in/elias-garrido-3609671a2
-					</Button>
-
-					<Button
-						startIcon={<i className="devicon-github-original text-2xl"></i>}
-						variant="link"
-					>
-						github.com/Mastercliff
-					</Button>
 				</div>
 			</div>
+
+			<div className="flex flex-row justify-center items-center mt-12 mb-2 text-white h-full pb-2 space-x-2">
+					<Chip
+						color="success"
+						title="Node"
+						icon={<i className="devicon-nodejs-plain-wordmark colored"></i>}
+					/>
+
+					<Chip
+						color="custom"
+						customColor="bg-blue-600/10 text-blue-600"
+						title="Typescript"
+						icon={<i className="devicon-typescript-plain colored"></i>}
+					/>
+
+					<Chip
+						color="info"
+						title="React"
+						icon={<i className="devicon-react-original colored"></i>}
+					/>
+
+					<Chip
+						color="custom"
+						customColor="bg-purple-500/10 text-purple-500"
+						title="PHP"
+						icon={<i className="devicon-php-plain colored"></i>}
+					/>
+
+					<Chip
+						color="custom"
+						customColor="bg-red-500/10 text-red-500"
+						title="Laravel"
+						icon={<i className="devicon-laravel-original colored"></i>}
+					/>
+
+					<Chip
+						color="info"
+						title="Flutter"
+						icon={<i className="devicon-flutter-plain colored"></i>}
+					/>
+
+					<Chip
+						color="custom"
+						customColor="bg-yellow-500/10 text-yellow-500"
+						title="Python"
+						icon={<i className="devicon-python-plain colored"></i>}
+					/>
+
+					<Chip
+						color="custom"
+						customColor="bg-orange-500/10 text-orange-500"
+						title="AWS Services"
+						icon={<i className="devicon-amazonwebservices-plain-wordmark colored"></i>}
+					/>
+			</div>
+		</div>
 		</Card>
 	);
 }

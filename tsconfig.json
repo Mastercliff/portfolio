@@ -17,12 +17,14 @@
 	  "moduleResolution": "node",
 	  "resolveJsonModule": true,
 	  "isolatedModules": true,
+	  "allowImportingTsExtensions": true,
 	  "noEmit": true,
 	  "jsx": "react-jsx",
 	  "baseUrl": "./",
 	  "paths": {
 		"@/*": ["src/*"],
-		"@images/*": ["public/images/*"]
+		"@images/*": ["public/images/*"],
+		"@icons/*": ["src/assets/icons/*"]
 	  }
 	},
 	"include": [
