@@ -116,9 +116,9 @@ const technologiesInfos: Record<string, {
 		title: "Postgre SQL"
 	},
 	nextjs: {
-		color: "neutral-600",
+		color: "gray-600",
 		icon: <i className="devicon-nextjs-plain"></i>,
-		title: "Next"
+		title: "Next JS"
 	},
 	tailwindcss: {
 		color: "blue-500",
@@ -131,7 +131,7 @@ const technologiesInfos: Record<string, {
 		title: "Dart"
 	},
 	mongodb: {
-		color: "lime-500",
+		color: "green-500",
 		icon: <i className="devicon-mongodb-plain-wordmark colored"></i>,
 		title: "Mongo DB"
 	}

@@ -2,9 +2,8 @@ import Button from "@/components/shared/Button";
 import Card from "@/components/shared/Card";
 import Chip from "@/components/shared/Chip";
 import Dialog from "@/components/shared/Dialog";
-import Image from "@/components/shared/Image";
 import { TechnologiesNames, technologiesInfos } from "@/data/OthersData";
-import { Images, PanelsRightBottom, Sparkles } from "lucide-react"
+import { Images } from "lucide-react"
 import { ReactNode, useState } from "react";
 
 type ProjectCardProps = {

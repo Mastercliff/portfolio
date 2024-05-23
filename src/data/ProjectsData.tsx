@@ -3,69 +3,6 @@ import { TechnologiesNames } from "./OthersData"
 import { ReactNode } from "react"
 import { PersonStanding, LucideTestTube2 } from "lucide-react"
 
-const oldProjectsList =[
-    {
-        name: "Semear App",
-        date: "10/09/2019",
-        foudation: "Startup Mobpoint",
-        description: "",
-		images: [""],
-        link: "https://play.google.com/store/apps/details?id=com.mobpoint.refugio",
-        technologies:[
-            'Flutter',
-            'Dart',
-        ]
-    },
-    {
-        name: "Dobuy App",
-        date: "10/09/2019",
-        foudation: "Startup Allkmia",
-        description: "",
-        link: "https://dobuy.site/",
-        technologies:[
-            'Flutter',
-            'Dart',
-        ]
-    },
-    {
-        name: "Mobpoint Site",
-        date: "10/09/2019",
-        foudation: "Startup Mobpoint",
-        description: "",
-        image: "image/projects/default.png",
-        link: "#",
-        technologies:[
-            'Laravel',
-            'PHP'
-        ]
-    },
-    {
-        name: "Boob",
-        date: "10/09/2019",
-        foudation: "Pessoal",
-        description: "",
-        image: "image/projects/default.png",
-        link: "https://github.com/Mastercliff",
-        technologies:[
-            'Flutter',
-            'Dart',
-        ]
-    },
-    {
-        name: "Este Site",
-        date: "10/09/2019",
-        foudation: "Pessoal",
-        description: "",
-        image: "image/projects/this.jpeg",
-        link: "https://github.com/Mastercliff",
-        technologies:[
-           'React Js',
-           'Javascript',
-           'SCSS',
-        ]
-    },
-]
-
 export type ProjectListItem = {
 	title: string,
 	company: string,

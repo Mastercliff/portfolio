@@ -6,6 +6,8 @@ import { ChevronDown, Dna } from 'lucide-react';
 import { useRef } from "react";
 import Comments from "@/components/layout/Comments";
 import { allCommentsList } from "@/data/CommentsData";
+import Experiences from "@/components/layout/Experiences";
+import { allExperiencesList } from "@/data/ExperiencesList";
 
 export default function MainPage() {
 	const projectsRef: any = useRef(null)
@@ -29,7 +31,7 @@ export default function MainPage() {
 		</div>
 
 		<div className="max-w-[1200px] overflow-x-auto">
-			<div className="flex items-center text-xl font-medium text-left text-white/90 mb-2 mt-5"> <Dna className="mr-2"/> Marcos Importantes </div>
+			<div className="flex items-center text-xl font-medium text-left text-white/80 mb-2 mt-5"> <Dna className="mr-2"/> Marcos Importantes </div>
 			<MarksList data={mainProjectsList}/>
 		</div>
 
@@ -44,6 +46,12 @@ export default function MainPage() {
 		<div className="max-w-1200px]">
 			<div className="mt-16" ref={projectsRef}>
 				<Projects data={allProjectsList}/>
+			</div>
+		</div>
+
+		<div className="max-w-1200px]">
+			<div className="mt-28">
+				<Experiences data={allExperiencesList}/>
 			</div>
 		</div>
 
