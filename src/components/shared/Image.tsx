@@ -4,7 +4,7 @@ type ImageProps = {
 	width: string,
 	height: string,
 	fit?: CSSProperties["objectFit"],
-	imageSrc: string,
+	src: string,
 	borderRadius?: string
 }
 
@@ -12,7 +12,7 @@ export default function Image({
 	height,
 	width,
 	fit,
-	imageSrc,
+	src,
 	borderRadius
 }: ImageProps){
 	return <div
@@ -27,7 +27,7 @@ export default function Image({
 			}}
 		>
 			<img
-				src={imageSrc}
+				src={src}
 				style={{ width: "100%", objectFit: fit }}
 			/>
 		</div>

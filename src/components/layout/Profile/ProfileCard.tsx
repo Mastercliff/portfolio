@@ -13,7 +13,7 @@ export default function ProfileCard() {
 					<Image
 						width="250px"
 						height="250px"
-						imageSrc="/images/profile.png"
+						src="/images/profile.png"
 						fit="fill"
 					/>
 				</div>
@@ -24,13 +24,13 @@ export default function ProfileCard() {
 					<div className="font-medium text-gray-400">Fullstack Developer</div>
 					</div>
 
-					<div className="w-[600px]">
+					<div className="max-w-[600px] w-full">
 						Olá, sou <span className="text-green-400 font-medium">Desenvolvedor Fullstack Pleno</span>, possuo mais de <span className="text-green-400 font-medium">4 anos</span> de experiência comprovada,
 						sou autoditada e apaixonado pela área de desenvolvimento de software. Seria uma honra
 						fazer parte do planejamento, criação e manutenção das suas aplicações.
 					</div>
 
-					<div className="flex flex-row items-center font-semibold mt-4"><div className="w-[8px] h-[8px] bg-green-500 rounded-full mr-2"></div>
+					<div className="flex-row items-center font-semibold mt-4 mobile:hidden md:flex"><div className="w-[8px] h-[8px] bg-green-500 rounded-full mr-2"></div>
 						<Chip
 							color="success"
 							title="Disponível Para Oportunidades de Trabalho"
@@ -39,7 +39,7 @@ export default function ProfileCard() {
 				</div>
 			</div>
 
-			<div className="flex flex-row justify-center items-center mt-12 mb-2 text-white h-full pb-2 space-x-2">
+			<div className="flex flex-row justify-center items-center mt-12 mb-2 text-white h-full pb-2 gap-2 flex-wrap">
 					<Chip
 						color="success"
 						title="Node"

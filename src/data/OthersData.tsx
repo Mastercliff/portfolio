@@ -1,4 +1,5 @@
 import Chip from "@/components/shared/Chip";
+import { ReactNode } from "react";
 
 const skillList = [
     {
@@ -59,58 +60,87 @@ const skillList = [
     }
 ]
 
-const technologiesBadges = {
-	node: <Chip
-		color="success"
-		title="Node"
-		icon={<i className="devicon-nodejs-plain-wordmark colored"></i>}
-	/>,
-	typescript: <Chip
-		color="custom"
-		customColor="bg-blue-600/10 text-blue-600"
-		title="Typescript"
-		icon={<i className="devicon-typescript-plain colored"></i>}
-	/>,
-	react: <Chip
-		color="info"
-		title="React"
-		icon={<i className="devicon-react-original colored"></i>}
-	/>,
-	php: <Chip
-		color="custom"
-		customColor="bg-purple-500/10 text-purple-500"
-		title="PHP"
-		icon={<i className="devicon-php-plain colored"></i>}
-	/>,
-	laravel: <Chip
-		color="custom"
-		customColor="bg-red-500/10 text-red-500"
-		title="Laravel"
-		icon={<i className="devicon-laravel-original colored"></i>}
-	/>,
-	flutter: <Chip
-		color="info"
-		title="Flutter"
-		icon={<i className="devicon-flutter-plain colored"></i>}
-	/>,
-	python: <Chip
-		color="custom"
-		customColor="bg-yellow-500/10 text-yellow-500"
-		title="Python"
-		icon={<i className="devicon-python-plain colored"></i>}
-	/>,
-	awss: <Chip
-		color="custom"
-		customColor="bg-orange-500/10 text-orange-500"
-		title="AWS Services"
-		icon={<i className="devicon-amazonwebservices-plain-wordmark colored"></i>}
-/>
+const technologiesInfos: Record<string, {
+	color: string,
+	icon: ReactNode,
+	title: string
+}> = {
+	node: {
+		color: "green-500",
+		icon: <i className="devicon-nodejs-plain-wordmark colored"></i>,
+		title: "Node"
+	},
+	typescript: {
+		color: "blue-600",
+		icon: <i className="devicon-typescript-plain colored"></i>,
+		title: "Typescript"
+	},
+	react: {
+		color: "blue-500",
+		icon: <i className="devicon-react-original colored"></i>,
+		title: "React"
+	},
+	php: {
+		color: "purple-500",
+		icon: <i className="devicon-php-plain colored"></i>,
+		title: "PHP"
+	},
+	laravel: {
+		color: "red-500",
+		icon: <i className="devicon-laravel-original colored"></i>,
+		title: "Laravel"
+	},
+	flutter: {
+		color: "blue-500",
+		icon: <i className="devicon-flutter-plain colored"></i>,
+		title: "Flutter"
+	},
+	python: {
+		color: "yellow-500",
+		icon: <i className="devicon-python-plain colored"></i>,
+		title: "Python"
+	},
+	awss: {
+			color: "orange-500",
+			icon: <i className="devicon-amazonwebservices-plain-wordmark colored"></i>,
+			title: "AWS Services"
+	},
+	redis: {
+		color: "red-500",
+		icon: <i className="devicon-redis-plain colored"></i>,
+		title: "Redis"
+	},
+	postgresql: {
+		color: "blue-600",
+		icon: <i className="devicon-postgresql-plain colored"></i>,
+		title: "Postgre SQL"
+	},
+	nextjs: {
+		color: "neutral-600",
+		icon: <i className="devicon-nextjs-plain"></i>,
+		title: "Next"
+	},
+	tailwindcss: {
+		color: "blue-500",
+		icon: <i className="devicon-tailwindcss-original colored"></i>,
+		title: "Tailwindcss"
+	},
+	dart: {
+		color: "blue-500",
+		icon: <i className="devicon-dart-plain colored"></i>,
+		title: "Dart"
+	},
+	mongodb: {
+		color: "lime-500",
+		icon: <i className="devicon-mongodb-plain-wordmark colored"></i>,
+		title: "Mongo DB"
+	}
 }
 
-export type TechnologiesNames = keyof typeof technologiesBadges
+export type TechnologiesNames = keyof typeof technologiesInfos
 
 
 export {
 	skillList,
-	technologiesBadges
+	technologiesInfos
 };

@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 
 body {
 	height: 100vh;
@@ -10,6 +13,19 @@ body {
 	background: -webkit-linear-gradient(180deg, hsla(219, 45%, 9%, 1) 76%, hsla(227, 38%, 14%, 1) 100%);
 	
 	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0C1320", endColorstr="#161C31", GradientType=1 );
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: hsla(219, 45%, 9%, 1);
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: rgb(34, 37, 44);
+	border-radius: 4px;
 }
 
 @tailwind base;
