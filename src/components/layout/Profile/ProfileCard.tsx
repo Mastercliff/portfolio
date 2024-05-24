@@ -24,13 +24,13 @@ export default function ProfileCard() {
 					</div>
 				</div>
 
-				<div className="flex flex-col justify-between items-start ml-6 text-white h-full pb-2">
+				<div className="flex flex-col justify-between items-start sm:ml-6 text-white h-full pb-2">
 					<div className="w-full flex flex-col justify-center items-center sm:items-start">
 						<div className="font-bold text-xl">Elias Sousa Garrido</div>
 						<div className="font-medium text-gray-400">Fullstack Developer</div>
 					</div>
 
-					<div className="max-w-[600px] w-full mt-4 sm:mt-0">
+					<div className="max-w-[600px] w-full mt-4 text-center sm:text-left sm:mt-0">
 						Olá, sou <span className="text-green-400 font-medium">Desenvolvedor Fullstack Pleno</span>, possuo mais de <span className="text-green-400 font-medium">4 anos</span> de experiência comprovada,
 						sou autoditada e apaixonado pela área de desenvolvimento de software. Seria uma honra
 						fazer parte do planejamento, criação e manutenção das suas aplicações.
