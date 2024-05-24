@@ -1,139 +1,129 @@
-import Chip from "@/components/shared/Chip";
-import { ReactNode } from "react";
 
-const skillList = [
-    {
-        name: "Flutter",
-        status: 4,
-    },
-    {
-        name: "Dart",
-        status: 4,
-    },
-    {
-        name: "Laravel",
-        status: 2,
-    },
-    {
-        name: "PHP",
-        status: 2,
-    },
-    {
-        name: "React",
-        status: 2,
-    },
-    {
-        name: "Javascript",
-        status: 4,
-    },
-    {
-        name: "HTML",
-        status: 4,
-    },
-    {
-        name: "CSS",
-        status: 4,
-    },
-    {
-        name: "SCSS",
-        status: 3,
-    },
-    {
-        name: "Typescript",
-        status: 2,
-    },
-    {
-        name: "Node JS",
-        status: 2,
-    },
-    {
-        name: "Next JS",
-        status: 1,
-    },
-    {
-        name: "Mysql",
-        status: 2,
-    },
-    {
-        name: "Linux",
-        status: 4,
-    }
-]
 
 const technologiesInfos: Record<string, {
 	color: string,
-	icon: ReactNode,
+	icon: string,
 	title: string
 }> = {
 	node: {
 		color: "green-500",
-		icon: <i className="devicon-nodejs-plain-wordmark colored"></i>,
+		icon: "devicon-nodejs-plain-wordmark colored",
 		title: "Node"
 	},
 	typescript: {
 		color: "blue-600",
-		icon: <i className="devicon-typescript-plain colored"></i>,
+		icon: "devicon-typescript-plain colored",
 		title: "Typescript"
 	},
 	react: {
 		color: "blue-500",
-		icon: <i className="devicon-react-original colored"></i>,
+		icon: "devicon-react-original colored",
 		title: "React"
 	},
 	php: {
 		color: "purple-500",
-		icon: <i className="devicon-php-plain colored"></i>,
+		icon: "devicon-php-plain colored",
 		title: "PHP"
 	},
 	laravel: {
 		color: "red-500",
-		icon: <i className="devicon-laravel-original colored"></i>,
+		icon: "devicon-laravel-original colored",
 		title: "Laravel"
 	},
 	flutter: {
 		color: "blue-500",
-		icon: <i className="devicon-flutter-plain colored"></i>,
+		icon: "devicon-flutter-plain colored",
 		title: "Flutter"
 	},
 	python: {
 		color: "yellow-500",
-		icon: <i className="devicon-python-plain colored"></i>,
+		icon: "devicon-python-plain colored",
 		title: "Python"
 	},
 	awss: {
 			color: "orange-500",
-			icon: <i className="devicon-amazonwebservices-plain-wordmark colored"></i>,
+			icon: "devicon-amazonwebservices-plain-wordmark colored",
 			title: "AWS Services"
 	},
 	redis: {
 		color: "red-500",
-		icon: <i className="devicon-redis-plain colored"></i>,
+		icon: "devicon-redis-plain colored",
 		title: "Redis"
 	},
 	postgresql: {
 		color: "blue-600",
-		icon: <i className="devicon-postgresql-plain colored"></i>,
+		icon: "devicon-postgresql-plain colored",
 		title: "Postgre SQL"
 	},
 	nextjs: {
 		color: "gray-600",
-		icon: <i className="devicon-nextjs-plain"></i>,
+		icon: "devicon-nextjs-plain",
 		title: "Next JS"
 	},
 	tailwindcss: {
 		color: "blue-500",
-		icon: <i className="devicon-tailwindcss-original colored"></i>,
-		title: "Tailwindcss"
+		icon: "devicon-tailwindcss-original colored",
+		title: "Tailwind CSS"
+	},
+	javascript: {
+		icon: "devicon-javascript-plain colored",
+		color: "yellow-500",
+		title: "Javascript"
+	},
+	html: {
+		icon: "devicon-html5-plain-wordmark colored",
+		color: "orange-500",
+		title: "HTML"
+	},
+	css: {
+		icon: "devicon-css3-plain-wordmark colored",
+		color: "blue-500",
+		title: "CSS"
 	},
 	dart: {
 		color: "blue-500",
-		icon: <i className="devicon-dart-plain colored"></i>,
+		icon: "devicon-dart-plain colored",
 		title: "Dart"
 	},
 	mongodb: {
 		color: "green-500",
-		icon: <i className="devicon-mongodb-plain-wordmark colored"></i>,
+		icon: "devicon-mongodb-plain-wordmark colored",
 		title: "Mongo DB"
+	},
+	docker: {
+		color: "blue-500",
+		icon: "devicon-docker-plain colored",
+		title: "Docker"
+	},
+	mysql: {
+		color: "blue-500",
+		icon: "devicon-mysql-original colored",
+		title: "MySql"
+	},
+	mui: {
+		color: "blue-500",
+		icon: "devicon-materialui-plain colored",
+		title: "Material UI"
+	},
+	sass: {
+		icon: 	"devicon-sass-original colored",
+		color: "pink-500",
+		title: "Sass"
+	},
+	kafka: {
+		color: "gray-600",
+		icon: "devicon-apachekafka-original-wordmark",
+		title: "Kafka"
+	},
+	vue: {
+		color: "green-500",
+		icon: "devicon-vuejs-plain colored",
+		title: "Vue JS"
+	},
+	sqlite: {
+		color: "blue-600",
+		icon: "devicon-sqlite-plain colored",
+		title: "SQLite"
 	}
 }
 
@@ -141,6 +131,5 @@ export type TechnologiesNames = keyof typeof technologiesInfos
 
 
 export {
-	skillList,
 	technologiesInfos
 };

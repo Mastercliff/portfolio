@@ -7,7 +7,7 @@ type CommentCardProps = {
 }
 
 export default function CommentCard ({ commentData }: CommentCardProps) {
-	return <Card customClass="rounded-none ring-0 bg-transparent">
+	return  <div className="backdrop-blur text-white ring-transparent bg-transparent max-w-[560px] p-6">
 		<div className="flex flex-col">
 			<div className="text-sm">
 				"{commentData.comment}"
@@ -29,5 +29,5 @@ export default function CommentCard ({ commentData }: CommentCardProps) {
 				</div>
 			</div>
 		</div>
-	</Card>
+	</div>
 }

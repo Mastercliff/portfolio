@@ -65,7 +65,9 @@ const allProjectsList: ProjectListItem[] = [
 			"awss",
 			"redis",
 			"postgresql",
-			"mongodb"
+			"docker",
+			"mongodb",
+			"mui"
 		]
 	},
 
@@ -81,7 +83,8 @@ const allProjectsList: ProjectListItem[] = [
 			"laravel",
 			"flutter",
 			"node",
-			"redis"
+			"redis",
+			"mysql"
 		]
 	},
 

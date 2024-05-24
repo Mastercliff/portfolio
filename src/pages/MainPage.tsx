@@ -8,6 +8,7 @@ import Comments from "@/components/layout/Comments";
 import { allCommentsList } from "@/data/CommentsData";
 import Experiences from "@/components/layout/Experiences";
 import { allExperiencesList } from "@/data/ExperiencesList";
+import Skills from "@/components/layout/Skills";
 
 export default function MainPage() {
 	const projectsRef: any = useRef(null)
@@ -46,6 +47,12 @@ export default function MainPage() {
 		<div className="max-w-1200px]">
 			<div className="mt-16" ref={projectsRef}>
 				<Projects data={allProjectsList}/>
+			</div>
+		</div>
+
+		<div className="max-w-1200px]">
+			<div className="mt-28">
+				<Skills />
 			</div>
 		</div>
 
