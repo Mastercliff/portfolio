@@ -11,7 +11,7 @@ export default function Skills() {
 			<Atom size={32}/> <div className="font-medium text-2xl">Minhas Habilidades</div>
 		</div>
 
-		<div className="grid grid-cols-6 max-w-[1200px] gap-2">
+		<div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 max-w-[1200px] gap-2">
 				{
 					skillsList.map(skill => {
 						const tech = technologiesInfos[skill]

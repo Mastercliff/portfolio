@@ -16,7 +16,7 @@ export default function MarkCard ({ images, title, resume, logo, company, seeMor
 
 	return <Card>
 		<div className="flex flex-row space-x-4 w-full">
-			<div className="flex flex-col justify-center items-center h-[200px] w-[200px] bg-gray-600/10 rounded-xl flex-none backdrop-blur-md">
+			<div className="hidden sm:flex flex-col justify-center items-center h-[200px] w-[200px] bg-gray-600/10 rounded-xl flex-none backdrop-blur-md">
 				{Logo}
 			</div>
 
@@ -31,7 +31,7 @@ export default function MarkCard ({ images, title, resume, logo, company, seeMor
 					{company}
 				</div>
 
-				<div>
+				<div className="mb-4 sm:mb-0">
 					{resume}
 				</div>
 				</div>

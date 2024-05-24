@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 html {
     scroll-behavior: smooth;
+	font-family: Inter, 'system-ui', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
 }
 
 body {
@@ -27,6 +32,22 @@ body {
 	background-color: rgb(34, 37, 44);
 	border-radius: 4px;
 }
+
+
+.embla {
+	max-width: 48rem;
+	margin: auto;
+	--slide-height: 19rem;
+	--slide-spacing: 1rem;
+	--slide-size: 70%;
+  }
+
+  .embla__container {
+	backface-visibility: hidden;
+	display: flex;
+	touch-action: pan-y pinch-zoom;
+	margin-left: calc(var(--slide-spacing) * -1);
+  }
 
 @tailwind base;
 @tailwind components;

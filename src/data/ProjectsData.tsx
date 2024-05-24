@@ -82,9 +82,10 @@ const allProjectsList: ProjectListItem[] = [
         technologies: [
 			"laravel",
 			"flutter",
-			"node",
+			"php",
 			"redis",
-			"mysql"
+			"mysql",
+			"javascript"
 		]
 	},
 

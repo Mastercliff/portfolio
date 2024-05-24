@@ -15,9 +15,13 @@ module.exports = {
 			  'pos-0': '0% 0%',
 			  'pos-100': '100% 100%',
 			},
+			flex: {
+				'c': '0 0 70%'
+			}
 		},
 		screens: {
 			'mobile': '240px',
+			'xs': '460px',
 			'sm': '640px',
 			'md': '768px',
 			'lg': '1024px',

@@ -1,36 +1,42 @@
 import Card from "@/components/shared/Card";
 import Chip from "@/components/shared/Chip";
-import Image from "@/components/shared/Image";
 
 export default function ProfileCard() {
 	return (
 		<Card customClass="shadow-xl">
 			<div className="flex flex-col justify-between items-middle w-full">
-			<div className="flex flex-row items-center justify-center mt-4 h-[250px]">
+			<div className="flex flex-col items-center justify-center mt-4 sm:h-[250px] sm:flex-row">
 				<div
 					className=""
 				>
-					<Image
-						width="250px"
-						height="250px"
-						src="/images/profile.png"
-						fit="fill"
-					/>
+					<div
+						style={{
+							overflow: "hidden",
+							display: "inline-block",
+							verticalAlign: "middle",
+						}}
+						className="w-[140px] h-[140px] rounded-lg sm:w-[200px] sm:h-[200px] md:w-[250px] md:h-[250px]"
+					>
+						<img
+							src="/images/profile.png"
+							style={{ width: "100%", objectFit: "cover" }}
+						/>
+					</div>
 				</div>
 
 				<div className="flex flex-col justify-between items-start ml-6 text-white h-full pb-2">
-					<div>
-					<div className="font-bold text-xl">Elias Sousa Garrido</div>
-					<div className="font-medium text-gray-400">Fullstack Developer</div>
+					<div className="w-full flex flex-col justify-center items-center sm:items-start">
+						<div className="font-bold text-xl">Elias Sousa Garrido</div>
+						<div className="font-medium text-gray-400">Fullstack Developer</div>
 					</div>
 
-					<div className="max-w-[600px] w-full">
+					<div className="max-w-[600px] w-full mt-4 sm:mt-0">
 						Olá, sou <span className="text-green-400 font-medium">Desenvolvedor Fullstack Pleno</span>, possuo mais de <span className="text-green-400 font-medium">4 anos</span> de experiência comprovada,
 						sou autoditada e apaixonado pela área de desenvolvimento de software. Seria uma honra
 						fazer parte do planejamento, criação e manutenção das suas aplicações.
 					</div>
 
-					<div className="flex-row items-center font-semibold mt-4 mobile:hidden md:flex"><div className="w-[8px] h-[8px] bg-green-500 rounded-full mr-2"></div>
+					<div className="hidden sm:flex flex-row items-center font-semibold mt-4"><div className="w-[8px] h-[8px] bg-green-500 rounded-full mr-2"></div>
 						<Chip
 							color="success"
 							title="Disponível Para Oportunidades de Trabalho"

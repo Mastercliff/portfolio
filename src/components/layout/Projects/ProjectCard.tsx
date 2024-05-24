@@ -3,8 +3,9 @@ import Card from "@/components/shared/Card";
 import Chip from "@/components/shared/Chip";
 import Dialog from "@/components/shared/Dialog";
 import { TechnologiesNames, technologiesInfos } from "@/data/OthersData";
-import { Images } from "lucide-react";
+import { Images, Globe2 } from "lucide-react";
 import { ReactNode, useState } from "react";
+import ImagesCarousel from "./ImagesCarousel";
 
 type ProjectCardProps = {
 	images: string[];
@@ -14,6 +15,7 @@ type ProjectCardProps = {
 	logo: JSX.Element;
 	technologies: Array<TechnologiesNames>;
 	seeMoreButton?: ReactNode;
+	companyLink?: string;
 };
 
 export default function ProjectCard({
@@ -24,8 +26,11 @@ export default function ProjectCard({
 	logo,
 	company,
 	seeMoreButton,
+	companyLink
 }: ProjectCardProps) {
 	const [dialogOpen, setDialogOpen] = useState(false);
+
+	const OPTIONS = { loop: true }
 
 	const Logo = logo;
 
@@ -90,29 +95,9 @@ export default function ProjectCard({
 						title={title}
 						content={
 							<div className="flex flex-row justify-center">
-								<div className="flex flex-col space-x-4 items-center px-10">
-									<div className="grid grid-cols-1 rounded-xl gap-1">
-										{/* {images.map((image) => {
-											return (
-												<div className="h-full w-full transition-all duration-500">
-													{" "}
-													<img
-														className="h-full w-full rounded-sm hover:rounded-sm"
-														src={image}
-														style={{ objectFit: "cover" }}
-													/>{" "}
-												</div>
-											);
-										})} */}
-
-											<div className="h-full w-full transition-all duration-500">
-													{" "}
-													<img
-														className="h-full w-full rounded-xl"
-														src={images[0]}
-														style={{ objectFit: "cover" }}
-													/>{" "}
-											</div>
+								<div className="flex flex-col space-y-6 items-center px-10">
+									<div className="w-full"> 
+											<ImagesCarousel slides={images} options={OPTIONS}/>
 									</div>
 
 									<p className="mt-2 text-md text-white/90 text-center">
@@ -136,7 +121,18 @@ export default function ProjectCard({
 											})}
 										</div>
 									)}
+
+									<div className="flex flex-row justify-center items-center"> 
+											<Chip
+												variant="button"
+												title={companyLink || ""}
+												color="info"
+												icon={<Globe2/>}
+											/>
+									</div>
 								</div>
+
+
 							</div>
 						}
 					/>
