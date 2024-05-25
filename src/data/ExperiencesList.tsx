@@ -14,7 +14,7 @@ export type ExperiencesListItem = {
 
 const allExperiencesList: ExperiencesListItem[] = [
     {
-		title: 'Desenvolvedor FullStack',
+		title: 'Fullstack Dev.',
 		company: 'Startup Mobpoint',
 		description: "Encarregado pelo desenvolvimento e manutenção de aplicações Web, Mobile e Api's. Principal responsável pelo desenvolvimento do app Refúgio/Semear.", 
 		duration: '11/2019 - 03/2021',
@@ -22,70 +22,84 @@ const allExperiencesList: ExperiencesListItem[] = [
 		technologies: [
 			'flutter',
 			'laravel',
+			'dart',
 			'php',
 			'javascript',
-			'mysql'
+			'mysql',
+			'css',
+			'vue',
+			'redis'
 		]
 	},
 	{
-		title: 'Desenvolvedor FrontEnd',
+		title: 'Frontend Dev.',
 		company: 'Startup Alkkmia',
 		description: "Desenvolvedor de aplicações web, mobile e suporte da empresa para terceiros.", 
 		duration: '03/2021 - 08/2021',
 		companyLogo: <LucideTestTube2 size={23}/>,
 		technologies: [
 			'flutter',
-			'reactjs',
-			'node',
+			'react',
+			'dart',
 			'nextjs',
-			'javascript',
 			'typescript',
+			'javascript',
+			'css',
+			'sass'
 		]
 	},
 	{
-		title: 'Desenvolvedor FullStack',
+		title: 'Fullstack Dev.',
 		company: 'Letalk',
-		description: "Desenvolvedor de aplicações web, mobile e suporte da empresa para terceiros.", 
+		description: "Criava novas funcionalidades, atualizava e corrigia funções antigas e melhorava a UI/UX das principais aplicações da empresa, sempre operando no backend e frontend.", 
 		duration: '10/2021 - 11/2023',
 		companyLogo: <LetalkLogo height={32} width={24}/>,
 		technologies: [
-			'flutter',
-			'reactjs',
 			'node',
-			'nextjs',
+			'react',
+			'awss',
 			'javascript',
 			'typescript',
+			'postgresql',
+			'mongodb',
+			'redis',
+			'css',
+			'html'
 		]
 	},
 	{
-		title: 'Desenvolvedor FullStack Freelancer',
+		title: 'Fullstack Dev. Freelancer',
 		company: 'Startup Alkkmia',
-		description: "Desenvolvedor de aplicações web, mobile e suporte da empresa para terceiros.", 
+		description: "Responsável pelo desenvolvimento da aplicação principal da empresa e de algumas aplicações de terceiros.", 
 		duration: '11/2023 - 02/2024',
 		companyLogo: <LucideTestTube2 size={23}/>,
 		technologies: [
-			'flutter',
-			'reactjs',
-			'node',
 			'nextjs',
+			'react',
+			'node',
+			'tailwindcss',
 			'javascript',
 			'typescript',
 		]
 	},
 	{
-		title: 'Desenvolvedor FullStack Freelancer',
+		title: 'Fullstack Dev. Freelancer',
 		company: 'Letalk',
-		description: "Desenvolvedor de aplicações web, mobile e suporte da empresa para terceiros.", 
+		description: "Manutenção de pequenas funcionalidades e criação de novas funções.", 
 		duration: '11/2023 - Hoje',
 		companyLogo: <LetalkLogo height={32} width={24}/>,
 		workHere: true,
 		technologies: [
-			'flutter',
-			'reactjs',
 			'node',
-			'nextjs',
+			'react',
+			'awss',
 			'javascript',
 			'typescript',
+			'postgresql',
+			'mongodb',
+			'redis',
+			'css',
+			'html'
 		]
 	},
 ]

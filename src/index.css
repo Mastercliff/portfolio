@@ -63,4 +63,12 @@ body {
           -ms-overflow-style: none;  /* IE and Edge */
           scrollbar-width: none;  /* Firefox */
     }
+
+	.tooltip {
+		@apply invisible absolute;
+	  }
+	  
+	.has-tooltip:hover .tooltip {
+		@apply visible z-50;
+	}
   }

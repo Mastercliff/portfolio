@@ -1,6 +1,7 @@
 import Card from "@/components/shared/Card";
 import Chip from "@/components/shared/Chip";
 import { ExperiencesListItem } from "@/data/ExperiencesList";
+import { technologiesInfos } from "@/data/OthersData";
 
 type TimelineCard = {
 	experience: ExperiencesListItem
@@ -21,5 +22,13 @@ export default function TimelineCard({ experience }: TimelineCard) {
 			<Chip title={experience.duration} color="success"/>
 		</div>
 		<div className="text-slate-500">{experience.description}</div>
+
+		<div className="flex flex-row gap-1 flex-wrap items-center">{experience.technologies.map(techName => {
+			const tech = technologiesInfos[techName]
+			return <div className={`rounded-full p-2 has-tooltip`}>
+				<span className='tooltip rounded-xl shadow-xl p-2 px-4 bg-slate-800 text-white/80 mt-8 text-sm'>{tech.title}</span>
+				<i className={tech.icon}></i>
+			</div>
+		})}</div>
 	</Card>
 }

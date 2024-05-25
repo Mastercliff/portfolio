@@ -3,7 +3,7 @@ import Card from "@/components/shared/Card";
 import Chip from "@/components/shared/Chip";
 import Dialog from "@/components/shared/Dialog";
 import { TechnologiesNames, technologiesInfos } from "@/data/OthersData";
-import { Images, Globe2 } from "lucide-react";
+import { Images, Globe2, WifiOff } from "lucide-react";
 import { ReactNode, useState } from "react";
 import ImagesCarousel from "./ImagesCarousel";
 
@@ -50,7 +50,9 @@ export default function ProjectCard({
 								{company}
 							</div>
 
-							<div>{resume}</div>
+							<div className="sm:h-[110px] xl:h-[90px] flex flex-col justify-center items-center">
+								<div>{resume}</div>
+							</div>
 						</div>
 
 						{seeMoreButton && (
@@ -59,7 +61,7 @@ export default function ProjectCard({
 					</div>
 				</div>
 				{technologies && (
-					<div className="flex-row flex-wrap gap-2 mt-5 justify-center mobile:hidden lg:flex">
+					<div className="flex-row flex-wrap gap-2 mt-5 justify-center mobile:hidden xl:flex">
 						{technologies.map((technologieName, index) => {
 							const technologieInfo = technologiesInfos[technologieName];
 
@@ -97,7 +99,11 @@ export default function ProjectCard({
 							<div className="flex flex-row justify-center">
 								<div className="flex flex-col space-y-6 items-center px-10">
 									<div className="w-full"> 
-											<ImagesCarousel slides={images} options={OPTIONS}/>
+											{
+												images?.length > 0 ? <ImagesCarousel slides={images} options={OPTIONS}/> : <div className="ring-1 text-center ring-white/5 p-2 rounded-lg text-white/70 font-medium">
+													Este projeto não possui imagens
+												</div>
+											}
 									</div>
 
 									<p className="mt-2 text-md text-white/90 text-center">
@@ -125,9 +131,12 @@ export default function ProjectCard({
 									<div className="flex flex-row justify-center items-center"> 
 											<Chip
 												variant="button"
-												title={companyLink || ""}
-												color="info"
-												icon={<Globe2/>}
+												title={companyLink || "Sem link para este projeto"}
+												color={companyLink ? "info" : "error"}
+												icon={companyLink ? <Globe2 size={18}/> : <WifiOff size={18}/>}
+												onClick={companyLink ? () => {
+													window.open(companyLink)
+												} : undefined}
 											/>
 									</div>
 								</div>

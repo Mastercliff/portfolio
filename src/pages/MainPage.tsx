@@ -9,9 +9,12 @@ import { allCommentsList } from "@/data/CommentsData";
 import Experiences from "@/components/layout/Experiences";
 import { allExperiencesList } from "@/data/ExperiencesList";
 import Skills from "@/components/layout/Skills";
+import Contacts from "@/components/layout/Contacts";
 
 export default function MainPage() {
 	const projectsRef: any = useRef(null)
+
+	const expRef: any = useRef(null)
 
 	const executeScroll = () => {
 		if(projectsRef && projectsRef?.current) {
@@ -33,7 +36,7 @@ export default function MainPage() {
 
 		<div className="max-w-[1200px] overflow-x-auto">
 			<div className="flex items-center text-xl font-medium text-left text-white/80 mb-2 mt-5"> <Dna className="mr-2"/> Marcos Importantes </div>
-			<MarksList data={mainProjectsList}/>
+			<MarksList expRef={expRef} data={mainProjectsList}/>
 		</div>
 
 		<div className="max-w-1200px] mt-8">
@@ -57,7 +60,7 @@ export default function MainPage() {
 		</div>
 
 		<div className="max-w-1200px]">
-			<div className="mt-28">
+			<div className="mt-28" ref={expRef}>
 				<Experiences data={allExperiencesList}/>
 			</div>
 		</div>
@@ -65,6 +68,12 @@ export default function MainPage() {
 		<div className="max-w-1200px]">
 			<div className="mt-16">
 				<Comments comments={allCommentsList}/>
+			</div>
+		</div>
+
+		<div className="max-w-1200px]">
+			<div className="mt-16">
+				<Contacts />
 			</div>
 		</div>
 	</main>

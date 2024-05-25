@@ -1,4 +1,3 @@
-import Card from "@/components/shared/Card";
 import { ExperiencesListItem } from "@/data/ExperiencesList";
 import { ChevronDown, Home } from "lucide-react";
 import TimelineCard from "./TimelineCard";
@@ -14,7 +13,7 @@ export default function Timeline({ data } : TimelineProps) {
 			data.map((experience) => {
 				return <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
 
-				<div className={`flex items-center justify-center w-10 h-10 rounded-full border border-transparent bg-slate-300 group-[.is-active]:bg-transparent text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 ${experience?.workHere ? "group-[.is-active]:bg-gray-700 border-white-10" : ""}`}>
+				<div className={`flex items-center justify-center w-10 h-10 rounded-full border border-transparent bg-slate-300 group-[.is-active]:bg-gray-700 border-white-10 text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 ${experience?.workHere ? "" : ""}`}>
 					{ experience?.workHere ?  <Home className="text-white/70" size={18}/> :<ChevronDown/> }
 				</div>
 		

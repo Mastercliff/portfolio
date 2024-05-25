@@ -10,7 +10,7 @@ type ChipProps = {
 	onClick?: () => void
 }
 
-export default function Chip({title, color, variant = "text", customColor, icon}: ChipProps) {
+export default function Chip({title, color, variant = "text", customColor, icon, onClick}: ChipProps) {
 	const colorsSchemes = {
 		"success": "bg-green-500/10 text-green-500",
 		"error": "bg-red-500/10 text-red-500",
@@ -28,7 +28,7 @@ export default function Chip({title, color, variant = "text", customColor, icon}
 	}
 	
 
-	return <div className={`flex flex-nowrap items-center ${customClass} p-1 pl-4 pr-4 rounded-2xl hover:brightness-125`}>
+	return <div className={`flex flex-nowrap items-center ${customClass} p-1 pl-4 pr-4 rounded-2xl hover:brightness-125`} onClick={onClick || undefined}>
 		{
 			icon && <span className="mr-2">
 				{icon}
