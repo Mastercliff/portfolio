@@ -4,7 +4,7 @@ import Chip from "@/components/shared/Chip";
 import Dialog from "@/components/shared/Dialog";
 import { TechnologiesNames, technologiesInfos } from "@/data/OthersData";
 import { Images, Globe2, WifiOff } from "lucide-react";
-import { ReactNode, useState } from "react";
+import { ReactNode, useCallback, useState } from "react";
 import ImagesCarousel from "./ImagesCarousel";
 
 type ProjectCardProps = {

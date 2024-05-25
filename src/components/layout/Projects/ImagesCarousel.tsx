@@ -6,18 +6,32 @@ import {
 } from '@/components/shared/CarouselArrowButtons'
 import useEmblaCarousel  from 'embla-carousel-react'
 import { EmblaOptionsType } from 'embla-carousel';
+import { useCallback, useState } from "react";
+import Dialog from '@/components/shared/Dialog';
 
-type ImagesCarousel = {
+type ImagesCarouselProps = {
 	slides: string[]
 	options: Partial<EmblaOptionsType>
 }
 
-const ImagesCarousel = (props: any) => {
-  const { slides, options } = props
+const ImagesCarousel = ({slides, options }: ImagesCarouselProps) => {
   const [emblaRef, emblaApi] = useEmblaCarousel(options)
 
   const { selectedIndex, scrollSnaps, onDotButtonClick } =
     useDotButton(emblaApi)
+
+	const [currentImage, setCurrentImage] = useState(0);
+	const [isViewerOpen, setIsViewerOpen] = useState(false);
+
+	const openImageViewer = useCallback((index: number) => {
+		setCurrentImage(index);
+		setIsViewerOpen(true);
+	  }, []);
+
+	  const closeImageViewer = () => {
+		setCurrentImage(0);
+		setIsViewerOpen(false);
+	  };
 
   const {
     prevBtnDisabled,
@@ -30,10 +44,20 @@ const ImagesCarousel = (props: any) => {
     <section className="embla max-w-[48rem]">
       <div className="overflow-hidden w-full" ref={emblaRef}>
         <div className="embla__container">
-          {slides.map((image: string ,index: number) => (
+          {slides.map((image: string, index: number) => (
             <div className="flex-c min-w-0 pl-4" key={index}>
               <div className="flex items-center justify-center h-[19rem] w-full m-2 text-white/70">
-					<img className='w-full h-full rounded-xl' src={image} style={{objectFit: "cover"}}/>
+					<img className='w-full h-full rounded-xl' src={image} style={{objectFit: "cover"}} onClick={() => {
+						if(selectedIndex > index) {
+							onPrevButtonClick()
+						}
+
+						if(selectedIndex < index) {
+							onNextButtonClick()
+						}
+
+						openImageViewer(index)
+					}}/>
 			  </div>
             </div>
           ))}
@@ -58,6 +82,16 @@ const ImagesCarousel = (props: any) => {
           ))}
         </div>
       </div>
+	
+	  	<Dialog
+
+			content={<div className='flex flex-row items-center justify-center'>
+				<img className='rounded-xl' src={slides[currentImage]}/>
+			</div>}
+			open={isViewerOpen}
+			setOpen={setIsViewerOpen}
+			customPanelClass='bg-transparent ring-0 backdrop-blur-none w-[1660px] h-full'
+		/>
     </section>
   )
 }

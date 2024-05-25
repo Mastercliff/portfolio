@@ -23,13 +23,13 @@ export default function Contacts () {
 		</div>
 
 		<div className="w-full grid grid-cols-2 gap-2">
-			<div className="flex flex-row items-center justify-center ring-1 ring-white/10 p-3 px-6 text-white/80 rounded-xl space-x-2 cursor-pointer hover:brightness-125" onClick={() => {
+			<div className="flex flex-row items-center justify-center ring-1 ring-white/10 p-3 px-6 text-white/80 rounded-xl space-x-2 cursor-pointer hover:ring-white/30" onClick={() => {
 				window.open("https://www.linkedin.com/in/elias-garrido-3609671a2/")
 			}}>
 				<i className="devicon-linkedin-plain"></i> <span>Linkedin</span>
 			</div>
 
-			<div className="flex flex-row items-center justify-center ring-1 ring-white/10 p-2 px-4 text-white/80 rounded-xl space-x-2 cursor-pointer hover:brightness-125" onClick={() => {
+			<div className="flex flex-row items-center justify-center ring-1 ring-white/10 p-2 px-4 text-white/80 rounded-xl space-x-2 cursor-pointer hover:ring-white/30" onClick={() => {
 				window.open("https://github.com/Mastercliff")
 			}}>
 				<i className="devicon-github-original"></i> <span>Github</span>

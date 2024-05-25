@@ -7,10 +7,11 @@ type DialogProps = {
 	setOpen: (value: boolean) => void,
 	title?: string
 	content?: string | ReactNode
-	size?: "sm" | "md" | "lg"
+	size?: "sm" | "md" | "lg" | "xl",
+	customPanelClass?: string
 }
 
-export default function Dialog({open, setOpen, content, title, size = "md"}: DialogProps) {
+export default function Dialog({open, setOpen, content, title, size = "md", customPanelClass}: DialogProps) {
   let [isOpen, setIsOpen] = useState(open)
 
   const close = () => {
@@ -21,7 +22,8 @@ export default function Dialog({open, setOpen, content, title, size = "md"}: Dia
   const dialogSizes = {
 	"sm": "w-[360px]",
 	"md": "w-[560px]",
-	"lg": "w-[960px]"
+	"lg": "w-[960px]",
+	"xl": "w-[1460px]"
   }
 
 
@@ -39,7 +41,7 @@ export default function Dialog({open, setOpen, content, title, size = "md"}: Dia
                 leaveFrom="opacity-100 transform-[scale(100%)]"
                 leaveTo="opacity-0 transform-[scale(95%)]"
               >
-                <DialogPanel className={`${dialogSizes[size]} rounded-xl bg-slate-900/10 p-6 backdrop-blur-2xl space-y-4 shadow-md ring-1 ring-inset ring-white/5`}>
+                <DialogPanel className={`${dialogSizes[size]} rounded-xl bg-slate-900/10 p-6 backdrop-blur-2xl space-y-4 shadow-md ring-1 ring-inset ring-white/5 ${customPanelClass}`}>
                   <DialogTitle as="h3" className="text-base/7 font-medium text-white">
 					<div className='flex flex-row justify-between items-center'>
 						<span>
