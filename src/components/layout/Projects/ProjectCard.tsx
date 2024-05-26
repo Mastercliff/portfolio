@@ -16,6 +16,7 @@ type ProjectCardProps = {
 	technologies: Array<TechnologiesNames>;
 	seeMoreButton?: ReactNode;
 	companyLink?: string;
+	imagesArePortrait?: boolean;
 };
 
 export default function ProjectCard({
@@ -25,6 +26,7 @@ export default function ProjectCard({
 	technologies,
 	logo,
 	company,
+	imagesArePortrait,
 	seeMoreButton,
 	companyLink
 }: ProjectCardProps) {
@@ -100,7 +102,7 @@ export default function ProjectCard({
 								<div className="flex flex-col space-y-6 items-center px-10">
 									<div className="w-full flex flex-row justify-center items-center"> 
 											{
-												images?.length > 0 ? <ImagesCarousel slides={images} options={OPTIONS}/> : <div className="flex flex-col sm:flex-row justify-center items-center text-sm sm:text-md space-y-2 sm:space-y-0 sm:space-x-2 ring-1 text-center ring-white/5 p-2 rounded-lg text-white/70 font-medium max-w-[320px] w-full">
+												images?.length > 0 ? <ImagesCarousel isPortraitImage={imagesArePortrait} slides={images} options={OPTIONS}/> : <div className="flex flex-col sm:flex-row justify-center items-center text-sm sm:text-md space-y-2 sm:space-y-0 sm:space-x-2 ring-1 text-center ring-white/5 p-2 rounded-lg text-white/70 font-medium max-w-[320px] w-full">
 													<Frown/> <span>Este projeto não possui imagens</span>
 												</div>
 											}

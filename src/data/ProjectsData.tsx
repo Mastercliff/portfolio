@@ -11,6 +11,7 @@ export type ProjectListItem = {
 	images: string[],
 	logo: any,
 	companyLink?: string,
+	imagesArePortrait?: boolean,
 	mainColor: string,
 	technologies: TechnologiesNames[]
 }
@@ -78,6 +79,7 @@ const allProjectsList: ProjectListItem[] = [
 		images: ["images/refugio/one.jpeg", "images/refugio/two.jpeg", "images/refugio/three.jpeg", "images/refugio/four.jpeg"],
 		logo: <img src="images/mobpoint/logo.png" width={34}/>,
 		mainColor: "purple",
+		imagesArePortrait: true,
         technologies: [
 			"laravel",
 			"flutter",
@@ -126,7 +128,7 @@ const allProjectsList: ProjectListItem[] = [
         title: "Guma",
         company: "Projeto Pessoal",
         resume: "Uma aplicação feita totalmente em flutter com intuíto de ampliar as funcionalidades dos apps de notas",
-		images: ["images/guma/one.png", "images/guma/one.png"],
+		images: ["images/guma/one.png", "images/guma/one.png", "images/guma/one.png"],
 		logo: <img src="images/logo-color.png" width={34}/>,
         companyLink: "https://github.com/Mastercliff/guma",
 		mainColor: "purple",

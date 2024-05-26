@@ -1,6 +1,6 @@
 import { Button, Dialog as HeadDialog, DialogPanel, DialogTitle, Transition, TransitionChild } from '@headlessui/react'
 import { X as XIcon } from 'lucide-react'
-import { ReactNode, useState } from 'react'
+import { CSSProperties, ReactNode, useState } from 'react'
 
 type DialogProps = {
 	open: boolean,
@@ -8,10 +8,11 @@ type DialogProps = {
 	title?: string
 	content?: string | ReactNode
 	size?: "sm" | "md" | "lg" | "xl",
-	customPanelClass?: string
+	customPanelClass?: string,
+	style?: CSSProperties
 }
 
-export default function Dialog({open, setOpen, content, title, size = "md", customPanelClass}: DialogProps) {
+export default function Dialog({open, setOpen, content, title, size = "md", customPanelClass, style}: DialogProps) {
   let [isOpen, setIsOpen] = useState(open)
 
   const close = () => {
@@ -41,7 +42,7 @@ export default function Dialog({open, setOpen, content, title, size = "md", cust
                 leaveFrom="opacity-100 transform-[scale(100%)]"
                 leaveTo="opacity-0 transform-[scale(95%)]"
               >
-                <DialogPanel className={`${dialogSizes[size]} rounded-xl bg-slate-900/10 p-6 backdrop-blur-2xl space-y-4 shadow-md ring-1 ring-inset ring-white/5 ${customPanelClass}`}>
+                <DialogPanel className={`${dialogSizes[size]} rounded-xl bg-slate-900/10 p-6 backdrop-blur-2xl space-y-4 shadow-md ring-1 ring-white/5 ${customPanelClass}`} style={style}>
                   <DialogTitle as="h3" className="text-base/7 font-medium text-white">
 					<div className='flex flex-row justify-between items-center'>
 						<span>
