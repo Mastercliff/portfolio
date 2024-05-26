@@ -142,7 +142,7 @@ const allProjectsList: ProjectListItem[] = [
         resume: "Meu maior projeto, pois tive que usar todas as minhas habilidades em frontend e UI pra conseguir chamar a atenção de novos empregadores.",
 		images: [ ],
 		logo: <img src="images/logo-color.png" width={34}/>,
-        companyLink: "https://letalk.com.br/",
+        companyLink: "https://elias-garrido.com",
 		mainColor: "purple",
         technologies: [
 			"tailwindcss",

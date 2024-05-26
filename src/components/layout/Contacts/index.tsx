@@ -3,7 +3,7 @@ import { Mail } from 'lucide-react'
 
 export default function Contacts () {
 	return <div className="flex flex-col items-center justify-center h-[900px]">
-	<div className="flex items-center justify-center text-2xl font-medium text-center text-white/90 mb-8">Fim e Contatos &#x1F920;</div>
+	<div className="flex items-center justify-center text-2xl font-medium text-center text-white/90 mb-8"> Contatos &#x1F920;</div>
 
 	<div className="max-w-[1200px] w-full flex flex-col items-center space-y-5">
 		<div className="flex flex-col items-center text-white/80 max-w-[800px] text-lg text-center">
