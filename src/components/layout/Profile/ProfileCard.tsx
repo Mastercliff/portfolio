@@ -3,7 +3,7 @@ import Chip from "@/components/shared/Chip";
 
 export default function ProfileCard() {
 	return (
-		<Card customClass="shadow-xl">
+		<Card customClass="shadow-xl h-min">
 			<div className="flex flex-col justify-between items-middle w-full">
 			<div className="flex flex-col items-center justify-center mt-4 sm:h-[250px] sm:flex-row">
 				<div

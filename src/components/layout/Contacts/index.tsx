@@ -1,5 +1,5 @@
 import Card from '@/components/shared/Card'
-import { Mail } from 'lucide-react'
+import { Mail, Phone } from 'lucide-react'
 
 export default function Contacts () {
 	return <div className="flex flex-col items-center justify-center h-[900px]">
@@ -8,12 +8,16 @@ export default function Contacts () {
 	<div className="max-w-[1200px] w-full flex flex-col items-center space-y-5">
 		<div className="flex flex-col items-center text-white/80 max-w-[800px] text-lg text-center">
 			<Card>
-			Isso é tudo, obrigado pela paciência e por prestigiar meu projeto mais bonito até agora, caso tenha interesse entre em contato usando o email abaixo. Vamos trabalhar Juntos!
+				Isso é tudo, obrigado pela paciência e por prestigiar meu projeto mais bonito até agora, caso tenha interesse fale comigo usando os seguintes contatos. Vamos trabalhar Juntos!
 			</Card>
 
-			<div className='my-4'>
-				<div className="flex flex-row items-center justify-center ring-1 ring-white/10 p-3 px-6 text-white/80 rounded-xl space-x-2 hover:brightness-125 w-min">
-					<Mail size={18}/> <span className='text-sm'>elias.freela98@gmail.com</span>
+			<div className='my-4 flex flex-row space-x-2 w-full'>
+				<div className="flex flex-row items-center justify-center ring-1 ring-white/10 p-3 px-6 text-white/80 rounded-xl space-x-2 hover:brightness-125 w-full">
+					<Mail size={18}/> <span className='text-sm'>egarrido9898@gmail.com</span>
+				</div>
+
+				<div className="flex flex-row items-center justify-center ring-1 ring-white/10 p-3 px-6 text-white/80 rounded-xl space-x-2 hover:brightness-125 w-full">
+					<Phone size={18}/> <span className='text-sm'>+55 (98) 98103-4321</span>
 				</div>
 			</div>
 
