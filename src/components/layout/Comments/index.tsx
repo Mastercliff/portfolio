@@ -8,7 +8,7 @@ type CommentsProps = {
 }
 
 export default function Comments({ comments }: CommentsProps) {
-	return <div className="flex flex-col items-center justify-center h-[400px]">
+	return <div className="flex flex-col items-center justify-center max-h-[600px]">
 		<div className="flex flex-row justify-center space-x-2 mb-8 text-white/80">
 		<MessageCircleCodeIcon size={32}/> <div className="font-medium text-2xl">Comentários que Inspiram</div>
 		</div>

@@ -11,7 +11,7 @@ export default function Contacts () {
 				Isso é tudo, obrigado pela paciência e por prestigiar meu projeto mais bonito até agora, caso tenha interesse fale comigo usando os seguintes contatos. Vamos trabalhar Juntos!
 			</Card>
 
-			<div className='my-4 flex flex-row space-x-2 w-full'>
+			<div className='my-4 flex flex-col space-y-2 sm:flex-row sm:space-x-2 sm:space-y-0 w-full'>
 				<div className="flex flex-row items-center justify-center ring-1 ring-white/10 p-3 px-6 text-white/80 rounded-xl space-x-2 hover:brightness-125 w-full">
 					<Mail size={18}/> <span className='text-sm'>egarrido9898@gmail.com</span>
 				</div>
