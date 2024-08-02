@@ -86,9 +86,9 @@ const allExperiencesList: ExperiencesListItem[] = [
 		title: 'Fullstack Dev. Freelancer',
 		company: 'Letalk',
 		description: "Manutenção de pequenas funcionalidades e criação de novas funções.", 
-		duration: '11/2023 - Hoje',
+		duration: '11/2023 - 04/2024',
 		companyLogo: <LetalkLogo height={32} width={24}/>,
-		workHere: true,
+		workHere: false,
 		technologies: [
 			'node',
 			'react',
@@ -102,6 +102,22 @@ const allExperiencesList: ExperiencesListItem[] = [
 			'html'
 		]
 	},
+	{
+		title: 'Frotend Dev.',
+		company: '0xGameStudio',
+		description: "Principal responsável pela criação e manutenção do frontend de novas aplicações.", 
+		duration: '06/2024 - Hoje',
+		companyLogo: <img src="images/0xgs/logo.png" width={24}/>,
+		workHere: true,
+		technologies: [
+			'vue',
+			'nuxt',
+			'javascript',
+			'typescript',
+			'css',
+			'html'
+		]
+	}
 ]
 
 export {

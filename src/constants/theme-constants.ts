@@ -1,1 +1,1 @@
-export const baseInterfaceClasses = "backdrop-blur rounded-[22px] text-white bg-gray-900/60 ring-1 ring-inset ring-white/5 shadow-md"
+export const baseInterfaceClasses = "backdrop-blur rounded-[22px] text-white bg-gray-900 ring-1 ring-inset ring-white/5 shadow-md"

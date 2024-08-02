@@ -39,7 +39,7 @@ export default function ProfileCard() {
 					<div className="hidden sm:flex flex-row items-center font-semibold mt-4"><div className="w-[8px] h-[8px] bg-green-500 rounded-full mr-2"></div>
 						<Chip
 							color="success"
-							title="Disponível Para Oportunidades de Trabalho"
+							title="Trabalhando"
 						/>
 					</div>
 				</div>

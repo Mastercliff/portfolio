@@ -34,7 +34,7 @@ export default function Chip({title, color, variant = "text", customColor, icon,
 				{icon}
 			</span>
 		}
-		<span className={`text-md font-medium ${isButton ? "text-sm" : ""}`}>
+		<span className={`text-md font-medium whitespace-nowrap ${isButton ? "text-sm" : ""}`}>
 			{title}
 		</span>
 	</div>

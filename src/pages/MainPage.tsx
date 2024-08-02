@@ -45,31 +45,31 @@ export default function MainPage() {
 			</div>
 		</div>
 
-		<div className="max-w-1200px]">
+		<div className="max-w-[1200px]">
 			<div className="mt-16" ref={projectsRef}>
 				<Projects data={allProjectsList}/>
 			</div>
 		</div>
 
-		<div className="max-w-1200px]">
-			<div className="mt-28">
+		<div className="max-w-[1200px]">
+			<div className="mt-28 w-full">
 				<Skills />
 			</div>
 		</div>
 
-		<div className="max-w-1200px]">
+		<div className="max-w-[1200px]">
 			<div className="mt-28" ref={expRef}>
 				<Experiences data={allExperiencesList}/>
 			</div>
 		</div>
 
-		<div className="max-w-1200px]">
+		<div className="max-w-[1200px]">
 			<div className="mt-16">
 				<Comments comments={allCommentsList}/>
 			</div>
 		</div>
 
-		<div className="max-w-1200px]">
+		<div className="max-w-[1200px]">
 			<div className="mt-16">
 				<Contacts />
 			</div>

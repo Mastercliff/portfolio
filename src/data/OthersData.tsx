@@ -124,6 +124,21 @@ const technologiesInfos: Record<string, {
 		color: "blue-600",
 		icon: "devicon-sqlite-plain colored",
 		title: "SQLite"
+	},
+	git: {
+		color: "orange-500",
+		icon: "devicon-git-plain colored",
+		title: "Git"
+	},
+	nuxt: {
+		color: "green-500",
+		icon: "devicon-nuxtjs-plain colored",
+		title: "Nuxt JS"
+	},
+	vuetify: {
+		color: "blue-500",
+		icon: "devicon-vuetify-plain colored",
+		title: "Vuetify"
 	}
 }
 

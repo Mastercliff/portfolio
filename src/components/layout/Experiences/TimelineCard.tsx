@@ -8,8 +8,9 @@ type TimelineCard = {
 }
 
 export default function TimelineCard({ experience }: TimelineCard) {
-	return <Card customClass="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] lg:w-[calc(50%-2.5rem)]">
-		<div className="flex items-start flex-col sm:items-center sm:flex-row justify-between sm:space-x-2 mb-2">
+	return <div className={`w-[calc(100%-4rem)] rounded-3xl p-px md:w-[calc(50%-2.5rem)] lg:w-[calc(50%-2.5rem)] ${experience.workHere ? 'bg-gradient-to-b from-blue-300 to-pink-300 dark:from-blue-800 dark:to-purple-800' : ''}`}>
+		<Card customClass={`rounded-[calc(1.5rem-1px)] bg-gray-900 p-[26px] ring-1 ${experience.workHere ? 'ring-0' : ''}`}>
+		<div className="flex items-start flex-col sm:items-center sm:flex-row justify-between mb-2 flex-wrap gap-2">
 			<div className="flex items-center space-x-2 mb-4 sm:mb-0">
 				<div className="flex justify-center items-center h-[45px] w-[45px] bg-gray-600/10 rounded-xl flex-none backdrop-blur-md">
 					{experience.companyLogo}
@@ -19,7 +20,7 @@ export default function TimelineCard({ experience }: TimelineCard) {
 					<div className="font-bold text-white/60 text-sm">{experience.company}</div>
 				</div>
 			</div>
-			<Chip title={experience.duration} color="success"/>
+			<Chip title={experience.duration} color={`${experience.workHere ? 'success' : 'info'}`}/>
 		</div>
 		<div className="text-slate-500">{experience.description}</div>
 
@@ -31,4 +32,5 @@ export default function TimelineCard({ experience }: TimelineCard) {
 			</div>
 		})}</div>
 	</Card>
+	</div> 
 }
