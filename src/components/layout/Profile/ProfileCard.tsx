@@ -15,7 +15,7 @@ export default function ProfileCard() {
 							display: "inline-block",
 							verticalAlign: "middle",
 						}}
-						className="w-[140px] h-[140px] rounded-lg sm:w-[200px] sm:h-[200px] md:w-[250px] md:h-[250px]"
+						className="w-[140px] h-[140px] rounded-3xl sm:w-[200px] sm:h-[200px] md:w-[250px] md:h-[250px]"
 					>
 						<img
 							src="/images/profile.png"
