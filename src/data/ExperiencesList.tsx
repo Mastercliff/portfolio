@@ -115,7 +115,8 @@ const allExperiencesList: ExperiencesListItem[] = [
 			'javascript',
 			'typescript',
 			'css',
-			'html'
+			'html',
+			'python'
 		]
 	}
 ]

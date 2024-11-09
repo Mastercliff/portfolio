@@ -42,7 +42,7 @@ export default function Dialog({open, setOpen, content, title, size = "md", cust
                 leaveFrom="opacity-100 transform-[scale(100%)]"
                 leaveTo="opacity-0 transform-[scale(95%)]"
               >
-                <DialogPanel className={`${dialogSizes[size]} rounded-xl bg-slate-900/10 p-6 backdrop-blur-2xl space-y-4 shadow-md ring-1 ring-white/5 ${customPanelClass}`} style={style}>
+                <DialogPanel className={`${dialogSizes[size]} rounded-xl bg-slate-900/10 p-6 backdrop-blur-2xl space-y-4 shadow-xl ring-1 ring-white/5 ${customPanelClass}`} style={style}>
                   <DialogTitle as="h3" className="text-base/7 font-medium text-white">
 					<div className='flex flex-row justify-between items-center'>
 						<span>

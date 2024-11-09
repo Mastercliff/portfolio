@@ -37,7 +37,9 @@ export default function ProjectCard({
 	const Logo = logo;
 
 	return (
-		<Card customClass="transition-all duration-500 bg-gradient-to-tl from-slate-900 via-slate-800 to-slate-900/70 bg-size-200 bg-pos-100 hover:bg-pos-0 cursor-pointer">
+		<Card customClass="transition-all duration-500 bg-gradient-to-tl from-slate-900 via-slate-800 to-slate-900/70 bg-size-200 bg-pos-100 hover:bg-pos-0 cursor-pointer" onClick={() => {
+			setDialogOpen(true);
+		}}>
 			<div className="flex flex-col">
 				<div className="flex flex-row space-x-4 w-full">
 					<div className="flex flex-col justify-center items-center h-[50px] w-[50px] bg-gray-600/10 rounded-xl flex-none backdrop-blur-md">

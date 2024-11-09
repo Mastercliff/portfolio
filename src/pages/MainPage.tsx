@@ -24,7 +24,7 @@ export default function MainPage() {
 
 	return <main className="flex flex-col p-4 items-center space-y-6">
 
-		<div className="flex flex-col justify-between max-w-[1200px] lg:h-[100vh] pb-10 space-y-4 sm:space-y-0">
+		<div className="flex flex-col justify-between max-w-[1200px] lg:h-[100vh] pb-10 space-y-4">
 			<div className="flex flex-col justify-between items-middle w-full">
 				<div className="flex flex-row justify-center items-center text-center font-medium text-2xl text-white"><span className="mr-2">Bem vindo(a)</span> <i className="devicon-bash-plain" style={{marginTop: "7px"}}></i></div>
 			</div>

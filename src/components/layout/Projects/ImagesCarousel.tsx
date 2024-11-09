@@ -43,7 +43,7 @@ const ImagesCarousel = ({slides, options, isPortraitImage}: ImagesCarouselProps)
 			{slides.map((image: string, index: number) => (
 				<div className="flex-c min-w-0 pl-4" key={index}>
 				<div className={`flex items-center justify-center h-[20rem] w-full m-2 text-white/70 `}>
-						<img className={`w-full h-full rounded-xl`} src={image} style={{objectFit: "cover"}} onClick={() => {
+						<img className={`w-full h-full rounded-xl cursor-pointer`} src={image} style={{objectFit: "cover"}} onClick={() => {
 							if(selectedIndex !== index) {
 								emblaApi?.scrollTo(index)
 							}

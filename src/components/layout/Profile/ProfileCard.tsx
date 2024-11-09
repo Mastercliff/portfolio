@@ -31,8 +31,8 @@ export default function ProfileCard() {
 					</div>
 
 					<div className="max-w-[600px] w-full mt-4 text-center sm:text-left sm:mt-0">
-						Olá, sou <span className="text-green-400 font-medium">Desenvolvedor Fullstack Pleno</span>, possuo mais de <span className="text-green-400 font-medium">4 anos</span> de experiência comprovada,
-						sou autoditada e apaixonado pela área de desenvolvimento de software. Seria uma honra
+						Olá, sou <span className="text-green-400 font-medium">Desenvolvedor Fullstack Pleno</span>, possuo mais de <span className="text-green-400 font-medium">4 anos</span> de expe<wbr/>riência comprovada,
+						autoditada e apaixonado pela área de desenvolvi<wbr/>mento de software. Seria uma honra
 						fazer parte do planejamento, criação e manutenção das suas aplicações.
 					</div>
 
