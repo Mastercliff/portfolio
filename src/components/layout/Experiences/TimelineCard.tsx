@@ -2,12 +2,13 @@ import Card from "@/components/shared/Card";
 import Chip from "@/components/shared/Chip";
 import { ExperiencesListItem } from "@/data/ExperiencesList";
 import { technologiesInfos } from "@/data/OthersData";
+import { memo } from "react";
 
 type TimelineCard = {
 	experience: ExperiencesListItem
 }
 
-export default function TimelineCard({ experience }: TimelineCard) {
+function TimelineCard({ experience }: TimelineCard) {
 	return <div className={`w-[calc(100%-4rem)] rounded-3xl p-px md:w-[calc(50%-2.5rem)] lg:w-[calc(50%-2.5rem)] ${experience.workHere ? 'bg-gradient-to-b from-blue-300 to-pink-300 dark:from-blue-800 dark:to-purple-800' : ''}`}>
 		<Card customClass={`rounded-[calc(1.5rem-1px)] bg-gray-900 p-[26px] ring-1 ${experience.workHere ? 'ring-0' : ''}`}>
 		<div className="flex items-start flex-col sm:items-center sm:flex-row justify-between mb-2 flex-wrap gap-2">
@@ -32,5 +33,7 @@ export default function TimelineCard({ experience }: TimelineCard) {
 			</div>
 		})}</div>
 	</Card>
-	</div> 
+	</div>
 }
+
+export default memo(TimelineCard)

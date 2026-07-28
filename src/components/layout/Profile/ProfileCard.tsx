@@ -1,7 +1,8 @@
 import Card from "@/components/shared/Card";
 import Chip from "@/components/shared/Chip";
+import { memo } from "react";
 
-export default function ProfileCard() {
+function ProfileCard() {
 	return (
 		<Card customClass="shadow-xl h-min">
 			<div className="flex flex-col justify-between items-middle w-full">
@@ -31,7 +32,7 @@ export default function ProfileCard() {
 					</div>
 
 					<div className="max-w-[600px] w-full mt-4 text-center sm:text-left sm:mt-0">
-						Olá, sou <span className="text-green-400 font-medium">Desenvolvedor Fullstack Pleno</span>, possuo mais de <span className="text-green-400 font-medium">4 anos</span> de expe<wbr/>riência comprovada,
+						Olá, sou <span className="text-green-400 font-medium">Desenvolvedor Fullstack Pleno</span>, possuo mais de <span className="text-green-400 font-medium">6 anos</span> de expe<wbr/>riência comprovada,
 						autoditada e apaixonado pela área de desenvolvi<wbr/>mento de software. Seria uma honra
 						fazer parte do planejamento, criação e manutenção das suas aplicações.
 					</div>
@@ -103,3 +104,5 @@ export default function ProfileCard() {
 		</Card>
 	);
 }
+
+export default memo(ProfileCard)

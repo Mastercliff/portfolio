@@ -1,12 +1,11 @@
-import Card from "@/components/shared/Card";
-import Image from "@/components/shared/Image";
 import { CommentType } from "@/data/CommentsData";
+import { memo } from "react";
 
 type CommentCardProps = {
 	commentData: CommentType
 }
 
-export default function CommentCard ({ commentData }: CommentCardProps) {
+function CommentCard ({ commentData }: CommentCardProps) {
 	return  <div className="backdrop-blur text-white ring-transparent bg-transparent max-w-[560px] p-6">
 		<div className="flex flex-col">
 			<div className="text-sm">
@@ -31,3 +30,5 @@ export default function CommentCard ({ commentData }: CommentCardProps) {
 		</div>
 	</div>
 }
+
+export default memo(CommentCard)

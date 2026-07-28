@@ -1,5 +1,5 @@
 import Card from "@/components/shared/Card";
-import { ReactNode } from "react";
+import { ReactNode, memo } from "react";
 
 type MarkCardProps = {
 	images: string[]
@@ -10,7 +10,7 @@ type MarkCardProps = {
 	seeMoreButton?: ReactNode
 }
 
-export default function MarkCard ({ images, title, resume, logo, company, seeMoreButton }: MarkCardProps) {
+function MarkCard ({ images, title, resume, logo, company, seeMoreButton }: MarkCardProps) {
 
 	const Logo = logo
 
@@ -42,6 +42,9 @@ export default function MarkCard ({ images, title, resume, logo, company, seeMor
 						</div>
 				}
 			</div>
-		</div> 
+		</div>
 	</Card>
 }
+
+
+export default memo(MarkCard)

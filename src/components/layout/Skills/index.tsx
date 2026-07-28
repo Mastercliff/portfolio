@@ -2,7 +2,7 @@ import { technologiesInfos } from "@/data/OthersData"
 import { Album, Atom } from "lucide-react"
 import { baseInterfaceClasses } from "@/constants/theme-constants"
 
-export default function Skills() {
+function Skills() {
 	const skillsList = Object.keys(technologiesInfos)
 
 	return <div className="w-full">
@@ -24,5 +24,7 @@ export default function Skills() {
 					})
 				}
 		</div>
-	</div> 
+	</div>
 }
+
+export default Skills

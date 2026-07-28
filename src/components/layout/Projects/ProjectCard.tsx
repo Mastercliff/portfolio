@@ -4,7 +4,7 @@ import Chip from "@/components/shared/Chip";
 import Dialog from "@/components/shared/Dialog";
 import { TechnologiesNames, technologiesInfos } from "@/data/OthersData";
 import { Images, Globe2, WifiOff, Frown } from "lucide-react";
-import { ReactNode, useState } from "react";
+import { ReactNode, useState, memo } from "react";
 import ImagesCarousel from "./ImagesCarousel";
 
 type ProjectCardProps = {
@@ -19,7 +19,7 @@ type ProjectCardProps = {
 	imagesArePortrait?: boolean;
 };
 
-export default function ProjectCard({
+function ProjectCard({
 	images,
 	title,
 	resume,
@@ -102,7 +102,7 @@ export default function ProjectCard({
 						content={
 							<div className="flex flex-row justify-center">
 								<div className="flex flex-col space-y-6 items-center px-10">
-									<div className="w-full flex flex-row justify-center items-center"> 
+									<div className="w-full flex flex-row justify-center items-center">
 											{
 												images?.length > 0 ? <ImagesCarousel isPortraitImage={imagesArePortrait} slides={images} options={OPTIONS}/> : <div className="flex flex-col sm:flex-row justify-center items-center text-sm sm:text-md space-y-2 sm:space-y-0 sm:space-x-2 ring-1 text-center ring-white/5 p-2 rounded-lg text-white/70 font-medium max-w-[320px] w-full">
 													<Frown/> <span>Este projeto não possui imagens</span>
@@ -132,7 +132,7 @@ export default function ProjectCard({
 										</div>
 									)}
 
-									<div className="flex flex-row justify-center items-center"> 
+									<div className="flex flex-row justify-center items-center">
 											<Chip
 												variant="button"
 												title={companyLink || "Sem link para este projeto"}
@@ -154,3 +154,6 @@ export default function ProjectCard({
 		</Card>
 	);
 }
+
+
+export default memo(ProjectCard)
