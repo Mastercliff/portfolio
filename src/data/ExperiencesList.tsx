@@ -6,7 +6,7 @@ export type ExperiencesListItem = {
 	title: string,
 	company: string,
 	companyLogo: ReactNode
-	description: string, 
+	description: string,
 	duration: string,
 	technologies: string[],
 	workHere?: boolean
@@ -16,7 +16,7 @@ const allExperiencesList: ExperiencesListItem[] = [
     {
 		title: 'Fullstack Dev.',
 		company: 'Startup Mobpoint',
-		description: "Encarregado pelo desenvolvimento e manutenção de aplicações Web, Mobile e Api's. Principal responsável pelo desenvolvimento do app Refúgio/Semear.", 
+		description: "Encarregado pelo desenvolvimento e manutenção de aplicações Web, Mobile e Api's. Principal responsável pelo desenvolvimento do app Refúgio/Semear.",
 		duration: '11/2019 - 03/2021',
 		companyLogo: <img src="images/mobpoint/logo.png" width={34}/>,
 		technologies: [
@@ -34,7 +34,7 @@ const allExperiencesList: ExperiencesListItem[] = [
 	{
 		title: 'Frontend Dev.',
 		company: 'Startup Alkkmia',
-		description: "Desenvolvedor de aplicações web, mobile e suporte da empresa para terceiros.", 
+		description: "Desenvolvedor de aplicações web, mobile e suporte da empresa para terceiros.",
 		duration: '03/2021 - 08/2021',
 		companyLogo: <LucideTestTube2 size={23}/>,
 		technologies: [
@@ -51,7 +51,7 @@ const allExperiencesList: ExperiencesListItem[] = [
 	{
 		title: 'Fullstack Dev.',
 		company: 'Letalk',
-		description: "Criava novas funcionalidades, atualizava e corrigia funções antigas e melhorava a UI/UX das principais aplicações da empresa, sempre operando no backend e frontend.", 
+		description: "Criava novas funcionalidades, atualizava e corrigia funções antigas e melhorava a UI/UX das principais aplicações da empresa, sempre operando no backend e frontend.",
 		duration: '10/2021 - 11/2023',
 		companyLogo: <LetalkLogo height={32} width={24}/>,
 		technologies: [
@@ -70,7 +70,7 @@ const allExperiencesList: ExperiencesListItem[] = [
 	{
 		title: 'Fullstack Dev. Freelancer',
 		company: 'Startup Alkkmia',
-		description: "Responsável pelo desenvolvimento da aplicação principal da empresa e de algumas aplicações de terceiros.", 
+		description: "Responsável pelo desenvolvimento da aplicação principal da empresa e de algumas aplicações de terceiros.",
 		duration: '11/2023 - 02/2024',
 		companyLogo: <LucideTestTube2 size={23}/>,
 		technologies: [
@@ -85,7 +85,7 @@ const allExperiencesList: ExperiencesListItem[] = [
 	{
 		title: 'Fullstack Dev. Freelancer',
 		company: 'Letalk',
-		description: "Manutenção de pequenas funcionalidades e criação de novas funções.", 
+		description: "Manutenção de pequenas funcionalidades e criação de novas funções.",
 		duration: '11/2023 - 04/2024',
 		companyLogo: <LetalkLogo height={32} width={24}/>,
 		workHere: false,
@@ -103,9 +103,9 @@ const allExperiencesList: ExperiencesListItem[] = [
 		]
 	},
 	{
-		title: 'Frotend Dev.',
+		title: 'Fullstack Dev.',
 		company: '0xGameStudio',
-		description: "Principal responsável pela criação e manutenção do frontend de novas aplicações.", 
+		description: "Principal responsável pela criação e manutenção do frontend de novas aplicações.",
 		duration: '06/2024 - Hoje',
 		companyLogo: <img src="images/0xgs/logo.png" width={24}/>,
 		workHere: true,
