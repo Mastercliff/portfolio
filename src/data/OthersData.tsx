@@ -139,6 +139,11 @@ const technologiesInfos: Record<string, {
 		color: "blue-500",
 		icon: "devicon-vuetify-plain colored",
 		title: "Vuetify"
+    },
+    java: {
+		color: "red-500",
+		icon: "devicon-java-plain colored",
+		title: "Java"
 	}
 }
 

@@ -16,7 +16,7 @@ export default function Comments({ comments }: CommentsProps) {
 		<div className="max-w-[1200px] w-full overflow-hidden rounded-xl ring-1 ring-white/5 ">
 			<div className="w-full grid grid-cols-1 transition-all duration-500 bg-gradient-to-tl from-slate-900 via-slate-800 to-slate-900/70 bg-size-200 bg-pos-100 hover:bg-pos-0">
 				{
-					comments.map( comment => (<CommentCard commentData={comment}/>))
+					comments.map( comment => (<CommentCard commentData={comment} key={comment.name}/>))
 				}
 			</div>
 		</div>

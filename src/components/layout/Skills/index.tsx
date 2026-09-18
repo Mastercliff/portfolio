@@ -17,7 +17,7 @@ function Skills() {
 						const tech = technologiesInfos[skill]
 						const textColor = `text-` + tech.color
 
-						return <div className={`${baseInterfaceClasses} flex flex-col items-center rounded-2xl justify-center ring-gray-800/40 w-[145px] h-[135px] space-y-2 text-white/60 hover:ring-white/10 text-pink-500`.replace("text-pink-500", "")}>
+						return <div className={`${baseInterfaceClasses} flex flex-col items-center rounded-2xl justify-center ring-gray-800/40 w-[145px] h-[135px] space-y-2 text-white/60 hover:ring-white/10 text-pink-500`.replace("text-pink-500", "")} key={skill}>
 							<i className={`text-white ${tech.icon} text-4xl`}></i>
 							<div className={`font-medium ${textColor}`}> {tech.title} </div>
 						</div>

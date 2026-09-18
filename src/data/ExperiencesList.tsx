@@ -13,7 +13,7 @@ export type ExperiencesListItem = {
 }
 
 const allExperiencesList: ExperiencesListItem[] = [
-    {
+		{
 		title: 'Fullstack Dev.',
 		company: 'Startup Mobpoint',
 		description: "Encarregado pelo desenvolvimento e manutenção de aplicações Web, Mobile e Api's. Principal responsável pelo desenvolvimento do app Refúgio/Semear.",
@@ -80,6 +80,7 @@ const allExperiencesList: ExperiencesListItem[] = [
 			'tailwindcss',
 			'javascript',
 			'typescript',
+			'mongodb',
 		]
 	},
 	{
@@ -105,10 +106,10 @@ const allExperiencesList: ExperiencesListItem[] = [
 	{
 		title: 'Fullstack Dev.',
 		company: '0xGameStudio',
-		description: "Principal responsável pela criação e manutenção do frontend de novas aplicações.",
-		duration: '06/2024 - Hoje',
+		description: "Principal responsável pela criação e manutenção do frontend e backend de novas aplicações. Entre 08/2024 e 01/2026 prestei serviços para o Mercado Bitcoin, através do contrato com a 0xGameStudio",
+		duration: '06/2024 - 09/2026',
 		companyLogo: <img src="images/0xgs/logo.png" width={24}/>,
-		workHere: true,
+		workHere: false,
 		technologies: [
 			'vue',
 			'nuxt',
@@ -116,7 +117,10 @@ const allExperiencesList: ExperiencesListItem[] = [
 			'typescript',
 			'css',
 			'html',
-			'python'
+			'python',
+			'java',
+			'mongodb',
+			'postgresql'
 		]
 	}
 ]

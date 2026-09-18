@@ -37,10 +37,10 @@ function ProfileCard() {
 						fazer parte do planejamento, criação e manutenção das suas aplicações.
 					</div>
 
-					<div className="hidden sm:flex flex-row items-center font-semibold mt-4"><div className="w-[8px] h-[8px] bg-green-500 rounded-full mr-2"></div>
+					<div className="hidden sm:flex flex-row items-center font-semibold mt-4"><div className="w-[8px] h-[8px] bg-blue-500 rounded-full mr-2"></div>
 						<Chip
-							color="success"
-							title="Trabalhando"
+							color="info"
+							title="Em Busca de Trabalho"
 						/>
 					</div>
 				</div>

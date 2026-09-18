@@ -14,7 +14,7 @@ export default function MarksList({ data, expRef }: MarksListProps) {
 		if(expRef && expRef?.current) {
 			expRef?.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
 		}
-	} 
+	}
 
 	return <div className="flex gap-4 overflow-x-auto max-w-[1200px] w-full no-scrollbar py-2 mobile:flex-col lg:flex-row">
 		{
@@ -31,6 +31,7 @@ export default function MarksList({ data, expRef }: MarksListProps) {
 						}}
 					/>
 				}
+				key={project.title}
 			/>))
 		}
 	</div>

@@ -25,9 +25,9 @@ function TimelineCard({ experience }: TimelineCard) {
 		</div>
 		<div className="text-slate-500">{experience.description}</div>
 
-		<div className="flex flex-row gap-1 flex-wrap items-center">{experience.technologies.map(techName => {
+		<div className="flex flex-row gap-1 flex-wrap items-center">{experience.technologies.map((techName, index) => {
 			const tech = technologiesInfos[techName]
-			return <div className={`rounded-full p-2 has-tooltip`}>
+            return <div className={`rounded-full p-2 has-tooltip`} key={`${techName}-${index}`}>
 				<span className='tooltip rounded-xl shadow-xl p-2 px-4 bg-slate-800 text-white/80 mt-8 text-sm'>{tech.title}</span>
 				<i className={tech.icon}></i>
 			</div>

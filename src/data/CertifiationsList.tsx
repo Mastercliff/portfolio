@@ -10,6 +10,12 @@ const certificationsList = [
 		status: "Falta Estágio",
 		date: "04/2018 - 04/2020",
 		foudation: "IFMA - Campus Monte Castelo",
+    },
+  {
+		title: "Curso: Análise e Desenvolvimento de Sistemas",
+		status: "Cursando",
+		date: "2026",
+		foudation: "UniFatecie",
 	},
 	{
 		title: "Javascript Basic",

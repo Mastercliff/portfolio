@@ -75,7 +75,8 @@ function ProjectCard({
 										icon={<i className={technologieInfo.icon}></i>}
 										title={technologieInfo.title}
 										color="custom"
-										customColor={`bg-${technologieInfo.color}/10 text-${technologieInfo.color}`}
+                    customColor={`bg-${technologieInfo.color}/10 text-${technologieInfo.color}`}
+										key={`${technologieName}-${index}`}
 									/>
 								);
 							}
@@ -125,7 +126,8 @@ function ProjectCard({
 														icon={<i className={technologieInfo.icon}></i>}
 														title={technologieInfo.title}
 														color="custom"
-														customColor={`bg-${technologieInfo.color}/10 text-${technologieInfo.color}`}
+                            customColor={`bg-${technologieInfo.color}/10 text-${technologieInfo.color}`}
+														key={`${technologieName}-${index}`}
 													/>
 												);
 											})}
