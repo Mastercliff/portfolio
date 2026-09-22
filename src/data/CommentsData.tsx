@@ -10,7 +10,13 @@ const allCommentsList: CommentType[] = [
 		name: "Guilherme Bromonschenkel",
 		image: "images/comments/mota-profile.jpg",
 		comment: "Tive a oportunidade de trabalhar com Elias e acompanhar sua evolução de perto. Ao longo dos projetos que participei junto dele, notei que ele aprimorou significativamente sua capacidade de resolução de problemas através da programação e, se tornou alguém capaz de levantar pontos importantes durante discussões mais técnicas. Por fim, vale ressaltar que ele é uma pessoa com constante interesse em aprender novos conceitos e frameworks, isso o mantém bem atualizado com relação ao mercado.",
-		position: "Tech Lead at Letalk"
+		position: "Tech Lead na Letalk"
+  },
+  {
+		name: "Junior Nivaldo",
+		image: "images/comments/junior-profile.jpg",
+		comment: "Estou muito satisfeito com o serviço do Elias. Ele é um profissional dedicado, comprometido e responsável, sempre realizando seu trabalho com qualidade, cuidado e profissionalismo. Recomendo seu serviço pela confiança e excelência que oferece.",
+		position: "CEO no Gerir Azul"
 	}
 ]
 
